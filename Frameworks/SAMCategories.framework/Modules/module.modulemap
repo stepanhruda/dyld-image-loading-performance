@@ -1,0 +1,6 @@
+framework module SAMCategories {
+  umbrella header "SAMCategories-umbrella.h"
+
+  export *
+  module * { export * }
+}

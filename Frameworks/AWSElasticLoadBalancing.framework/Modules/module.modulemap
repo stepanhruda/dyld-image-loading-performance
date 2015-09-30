@@ -1,0 +1,6 @@
+framework module AWSElasticLoadBalancing {
+  umbrella header "AWSElasticLoadBalancing-umbrella.h"
+
+  export *
+  module * { export * }
+}

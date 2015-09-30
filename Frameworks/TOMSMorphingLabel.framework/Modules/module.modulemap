@@ -1,0 +1,6 @@
+framework module TOMSMorphingLabel {
+  umbrella header "TOMSMorphingLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

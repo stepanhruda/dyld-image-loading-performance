@@ -1,0 +1,6 @@
+framework module AWSSQS {
+  umbrella header "AWSSQS-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+#import "STPBlockTransition.h"
+#import "STPTransition.h"
+#import "STPTransitionCenter.h"
+#import "UIGestureRecognizer+STPTransition.h"
+#import "UINavigationController+STPTransitions.h"
+#import "UIViewController+STPTransitions.h"

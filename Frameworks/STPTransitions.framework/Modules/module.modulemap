@@ -1,0 +1,6 @@
+framework module STPTransitions {
+  umbrella header "STPTransitions-umbrella.h"
+
+  export *
+  module * { export * }
+}

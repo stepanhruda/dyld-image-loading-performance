@@ -1,0 +1,6 @@
+framework module SMXMLDocument {
+  umbrella header "SMXMLDocument-umbrella.h"
+
+  export *
+  module * { export * }
+}

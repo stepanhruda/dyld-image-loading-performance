@@ -1,0 +1,3 @@
+@interface STPPresentationController : UIPresentationController
+
+@end

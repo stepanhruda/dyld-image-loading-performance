@@ -1,25 +1,74 @@
-//
-//  ViewController.swift
-//  ProfilingDyld
-//
-//  Created by Stepan Hruda on 9/29/15.
-//  Copyright (c) 2015 Stepan Hruda. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    func loadFrameworks() {
+        let frameworksToLoadDynamically = [
+            "AFNetworking",
+            "Alamofire",
+            "Aspects",
+            "AWSAutoScaling",
+            "AWSCloudWatch",
+            "AWSCognito",
+            "AWSCore",
+            "AWSDynamoDB",
+            "AWSEC2",
+            "AWSElasticLoadBalancing",
+            "AWSKinesis",
+            "AWSS3",
+            "AWSSES",
+            "AWSSimpleDB",
+            "AWSSNS",
+            "AWSSQS",
+            "BlocksKit",
+            "Bolts",
+            "CocoaAsyncSocket",
+            "CocoaLumberjack",
+            "FLEX",
+            "FMDB",
+            "FXBlurView",
+            "GBDeviceInfo",
+            "GZIP",
+            "HexColors",
+            "JSQSystemSoundPlayer",
+            "MagicalRecord",
+            "Mantle",
+            "MAObjCRuntime",
+            "Masonry",
+            "Mixpanel",
+            "Moya",
+            "NJKWebViewProgress",
+            "NPReachability",
+            "ObjectiveSugar",
+            "Reachability",
+            "SAMCategories",
+            "Shimmer",
+            "SMXMLDocument",
+            "SSKeychain",
+            "STPTransitions",
+            "TMCache",
+            "TOMSMorphingLabel",
+            "UICKeyChainStore",
+            "UIImage_PDF",
+            "XMLDictionary",
+            "YapDatabase",
+            "zipzap"
+        ]
+
+        for name in frameworksToLoadDynamically {
+            loadFrameworkNamed(name)
+        }
+    }
+    
+    @IBAction func loadPressed(sender: AnyObject) {
+        println("Start: \(NSDate())")
+        loadFrameworks()
+        println("End: \(NSDate())")
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func loadFrameworkNamed(name: String) -> Void {
+        let path = NSBundle.mainBundle().bundlePath + "/Frameworks/\(name).framework/\(name)"
+        dlopen(path, 10)
     }
-
 
 }
-

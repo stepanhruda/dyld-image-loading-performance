@@ -1,0 +1,32 @@
+//
+//  SSToolkit.strings
+//  SAMCategories
+//
+//  Created by Sam Soffes on 3/22/12.
+//  Copyright (c) 2012-2014 Sam Soffes. All rights reserved.
+//
+
+"1s" = "1s"; // one second
+"%ds" = "%ds"; // several seconds
+"1m" = "1m"; // one minutes
+"%dm" = "%dm"; // several minutes
+"1h" = "1t"; // one hours
+"%dh" = "%dt"; // several hours
+"1d" = "1d"; // one day
+"%@d" = "%@d"; // several days
+"1y" = "1å"; // one year
+"%@y" = "%@å"; // several years
+
+"1 minute" = "1 minut";
+"less than %d seconds" = "mindre end %d sekunder";
+"half a minute" = "et halvt minut";
+"less than a minute" = "mindre end et minut";
+"%d minutes" = "%d minutter";
+"about 1 hour" = "omkring 1 time";
+"about %d hours" = "omkring %d timer";
+"1 day" = "1 dag";
+"%d days" = "%d dage";
+"about 1 month" = "omkring 1 måned";
+"%d months" = "%d måneder";
+"about 1 year" = "omkring 1 år";
+"over %d years" = "over %d år";

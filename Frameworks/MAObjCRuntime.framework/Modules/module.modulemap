@@ -1,0 +1,6 @@
+framework module MAObjCRuntime {
+  umbrella header "MAObjCRuntime-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module AWSCloudWatch {
+  umbrella header "AWSCloudWatch-umbrella.h"
+
+  export *
+  module * { export * }
+}

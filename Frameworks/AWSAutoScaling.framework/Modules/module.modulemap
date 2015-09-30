@@ -1,0 +1,6 @@
+framework module AWSAutoScaling {
+  umbrella header "AWSAutoScaling-umbrella.h"
+
+  export *
+  module * { export * }
+}

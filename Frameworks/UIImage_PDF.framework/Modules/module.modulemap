@@ -1,0 +1,6 @@
+framework module UIImage_PDF {
+  umbrella header "UIImage+PDF-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,30 @@
+//
+//  SSToolkit.strings
+//  SAMCategories
+//
+//  Created by Sam Soffes on 3/26/12.
+//  Copyright (c) 2012-2014 Sam Soffes. All rights reserved.
+//
+
+"1s" = "1秒";   // one second
+"%ds" = "%d秒";   // several seconds
+"1m" = "1分";   // one minutes
+"%dm" = "%d分";   // several minutes
+"1h" = "1時間";   // one hours
+"%dh" = "%d時間";   // several hours
+"1d" = "1日";   // one day
+"%@d" = "%@日";   // several days
+
+"1 minute" = "1分";
+"less than %d seconds" = "%d秒以下";
+"half a minute" = "３０秒";
+"less than a minute" = "1分以下";
+"%d minutes" = "%d分";
+"about 1 hour" = "1時間ぐらい";
+"about %d hours" = "%d時間ぐらい";
+"1 day" = "1日";
+"%d days" = "%d日";
+"about 1 month" = "1ヶ月ぐらい";
+"%d months" = "%dヶ月";
+"about 1 year" = "1年ぐらい";
+"over %d years" = "%d年以上";

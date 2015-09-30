@@ -1,0 +1,6 @@
+framework module AWSSES {
+  umbrella header "AWSSES-umbrella.h"
+
+  export *
+  module * { export * }
+}
