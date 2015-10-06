@@ -93,7 +93,7 @@ end
 
   Notice that in step 1 we don't remove linker flags with `unless config_name == 'Test'` for configuration Test, so we don't add `-filelist` to it above and it still uses frameworks. (Debug can say Any architecture because it only builds the current one.)
 
-1. __Link against your app executable against any static libraries needed.__ You might or might not get linker errors if you don't, so make sure you test the hell out of your app.
+1. __Link your app executable against any static libraries needed.__ You might or might not get linker errors if you don't, so make sure you test the hell out of your app.
 
 1. __Resource bundles don't exist, include all resources into your main bundle.__ Also edit your code in case it expects a resource bundles to exist.
 
