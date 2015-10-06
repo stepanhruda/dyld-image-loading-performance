@@ -34,8 +34,68 @@ When using Instruments, only a fraction of the time taken is reported in time pr
 <img width="698" alt="screen shot 2015-09-30 at 11 16 44 am" src="https://cloud.githubusercontent.com/assets/2835783/10197701/ddbe596e-6766-11e5-9046-28b8e52309b6.png">
 
 
-### Workarounds
+### Workaround
 
-1. It is possible to move symbols (even when using Swift) inside your app executable to cut down on launch time. I'll post a solution here once I'm sure it can pass App Store review. This is just a hacky temporary solution, not addressing the underlying problem.
+It is possible to move all symbols (even when using Swift) into your app executable, so _dyld_ doesn't need to load the frameworks on launch. This only works if you are compiling the framework from source.
 
-1. Another workaround would be to link against your frameworks using `-weak_framework` and invoke `dlopen` during runtime as the example app does. You'd need to ensure the framework is loaded before using any symbols from it. This gives you more flexibility with when to take the performance hit, but cannot be automated.
+1. __Get rid of linker `-framework` flags.__ If you're using Cocoapods, it can be automated through a `post_install` step in Podfile.
+
+  ```
+post_install do |installer|
+  pods_target = installer.aggregate_targets.detect do |target|
+  # Target label is either `Pods` or `Pods-#{name_of_your_main_target}` based on how complex your dependency graph is.
+    pods_target.label == "Pods"
+  end
+
+  puts '+ Removing framework dependencies'
+
+  pods_target.xcconfigs.each_pair do |config_name, config|
+    config.other_linker_flags[:frameworks] = Set.new unless config_name == 'Test'
+    config.save_as(Pathname.new("#{pods_target.support_files_dir}/#{pods_target.label}.#{config_name}.xcconfig"))
+  end
+
+end
+  ```
+
+1. __Create a filelist per architecture, containing object files to be linked into the final executable.__ Again, if you're using Cocoapods, automate it by the following script. Run it after _Manifest.lock_ is verified in your main target (it needs to happen after all dependencies are compiled, but before the main executable is linked).
+
+  ```
+#!/usr/bin/ruby
+
+intermediates_directory = ENV['OBJROOT']
+configuration = ENV['CONFIGURATION']
+platform = ENV['EFFECTIVE_PLATFORM_NAME']
+archs = ENV['ARCHS']
+
+archs.split(" ").each do |architecture|
+
+  Dir.chdir("#{intermediates_directory}/Pods.build") do
+
+    filelist = ""
+
+    Dir.glob("#{configuration}#{platform}/*.build/Objects-normal/#{architecture}/*.o") do |object_file|
+
+      filelist += File.absolute_path(object_file) + "\n"
+
+    end
+
+    File.write("#{configuration}#{platform}-#{architecture}.objects.filelist", filelist)
+
+  end
+
+end
+  ```
+
+1. __Submit a filelist to the linker for each architecture being linked.__ You're likely only building _armv7_ and _arm64_ builds (standard architectures, check your _Architectures_ setting). You need to drill down to the architecture level for __each configuration__ and set _Other linker flags_ to `$(inherited) -filelist "$(OBJROOT)/Pods.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)-armv7.objects.filelist"` and ``$(inherited) -filelist "$(OBJROOT)/Pods.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)-arm64.objects.filelist"` respectively.
+
+  <img width="1048" alt="screen shot 2015-10-06 at 5 38 05 pm" src="https://cloud.githubusercontent.com/assets/2835783/10323442/102744f8-6c51-11e5-88dc-cd9883d785a7.png">
+
+  Notice that in step 1 we don't remove linker flags with `unless config_name == 'Test'` for configuration Test, so we don't add `-filelist` to it above and it still uses frameworks. (Debug can say Any architecture because it only builds the current one.)
+
+1. __Link against your app executable against any static libraries needed.__ You might or might not get linker errors if you don't, so make sure you test the hell out of your app.
+
+1. __Resource bundles don't exist, include all resources into your main bundle.__ Also edit your code in case it expects a resource bundles to exist.
+
+---
+
+_Another workaround is to link against all frameworks using `-weak_framework` and invoke `dlopen` during the run of the app (the example app does this). You'll need to ensure the framework is loaded before using any symbols from it. You will still take the _dyld_ performance hit, but this gives you flexibility when the hit happens._
