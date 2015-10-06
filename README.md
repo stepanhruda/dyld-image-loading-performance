@@ -33,6 +33,7 @@ When using Instruments, only a fraction of the time taken is reported in time pr
 
 <img width="698" alt="screen shot 2015-09-30 at 11 16 44 am" src="https://cloud.githubusercontent.com/assets/2835783/10197701/ddbe596e-6766-11e5-9046-28b8e52309b6.png">
 
+---
 
 ### Workaround
 
@@ -98,4 +99,6 @@ end
 
 ---
 
-_Another workaround is to link against all frameworks using `-weak_framework` and invoke `dlopen` during the run of the app (the example app does this). You'll need to ensure the framework is loaded before using any symbols from it. You will still take the _dyld_ performance hit, but this gives you flexibility when the hit happens._
+### Another workaround
+
+Link against all frameworks using `-weak_framework` and invoke `dlopen` during the run of the app (the example app does this). You'll need to ensure the framework is loaded before using any symbols from it. You will still take the _dyld_ performance hit, but this gives you flexibility when the hit happens.
