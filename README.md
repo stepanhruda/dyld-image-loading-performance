@@ -95,7 +95,7 @@ end
 
 1. __Link your app executable against any static libraries needed.__ You might or might not get linker errors if you don't, so make sure you test the hell out of your app.
 
-1. __Resource bundles don't exist, include all resources into your main bundle.__ Also edit your code in case it expects a resource bundles to exist.
+1. __Resource bundles don't exist, include all resources into your main bundle.__ Also edit your code in case it expects resource bundles to exist.
 
 ---
 
