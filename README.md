@@ -55,6 +55,7 @@ post_install do |installer|
     config.other_linker_flags[:frameworks] = Set.new
     config.attributes['OTHER_LDFLAGS[arch=armv7]'] = '$(inherited) -filelist "$(OBJROOT)/Pods.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)-armv7.objects.filelist"'
     config.attributes['OTHER_LDFLAGS[arch=arm64]'] = '$(inherited) -filelist "$(OBJROOT)/Pods.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)-arm64.objects.filelist"'
+    config.attributes['OTHER_LDFLAGS[arch=x86_64]'] = '$(inherited) -filelist "$(OBJROOT)/Pods.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)-x86_64.objects.filelist"'
     config.save_as(Pathname.new("#{register_target.support_files_dir}/#{register_target.label}.#{config_name}.xcconfig"))
   end
 
