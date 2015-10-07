@@ -39,7 +39,7 @@ When using Instruments, only a fraction of the time taken is reported in time pr
 
 It is possible to move all symbols (even when using Swift) into your app executable, so _dyld_ doesn't need to load the frameworks on launch. This only works if you are compiling the framework from source.
 
-1. __Get rid of linker `-framework` flags.__ If you're using Cocoapods, it can be automated through a `post_install` step in Podfile.
+1. __Get rid of linker `-framework` flags and promise to provide `-filelist` instead.__ If you're using Cocoapods, it can be automated through a `post_install` step in Podfile.
 
   ```
 post_install do |installer|
@@ -51,12 +51,16 @@ post_install do |installer|
   puts '+ Removing framework dependencies'
 
   pods_target.xcconfigs.each_pair do |config_name, config|
-    config.other_linker_flags[:frameworks] = Set.new unless config_name == 'Test'
-    config.save_as(Pathname.new("#{pods_target.support_files_dir}/#{pods_target.label}.#{config_name}.xcconfig"))
+    next if config_name == 'Test'
+    config.other_linker_flags[:frameworks] = Set.new
+    config.attributes['OTHER_LDFLAGS[arch=armv7]'] = '$(inherited) -filelist "$(OBJROOT)/Pods.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)-armv7.objects.filelist"'
+    config.attributes['OTHER_LDFLAGS[arch=arm64]'] = '$(inherited) -filelist "$(OBJROOT)/Pods.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)-arm64.objects.filelist"'
+    config.save_as(Pathname.new("#{register_target.support_files_dir}/#{register_target.label}.#{config_name}.xcconfig"))
   end
 
 end
   ```
+    Notice that we don't remove frameworks `if config_name == 'Test'`. _xctest_ bundles seem to have issues running properly. Let me know if you succeed in running tests with this setup!
 
 1. __Create a filelist per architecture, containing object files to be linked into the final executable.__ Again, if you're using Cocoapods, automate it by the following script. Run it after _Manifest.lock_ is verified in your main target (it needs to happen after all dependencies are compiled, but before the main executable is linked).
 
@@ -86,12 +90,6 @@ archs.split(" ").each do |architecture|
 
 end
   ```
-
-1. __Submit a filelist to the linker for each architecture being linked.__ You're likely only building _armv7_ and _arm64_ builds (standard architectures, check your _Architectures_ setting). You need to drill down to the architecture level for __each configuration__ and set _Other linker flags_ to `$(inherited) -filelist "$(OBJROOT)/Pods.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)-armv7.objects.filelist"` and ``$(inherited) -filelist "$(OBJROOT)/Pods.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)-arm64.objects.filelist"` respectively.
-
-  <img width="1048" alt="screen shot 2015-10-06 at 5 38 05 pm" src="https://cloud.githubusercontent.com/assets/2835783/10323442/102744f8-6c51-11e5-88dc-cd9883d785a7.png">
-
-  Notice that in step 1 we don't remove linker flags with `unless config_name == 'Test'` for configuration Test, so we don't add `-filelist` to it above and it still uses frameworks. (Debug can say Any architecture because it only builds the current one.)
 
 1. __Link your app executable against any static libraries needed.__ You might or might not get linker errors if you don't, so make sure you test the hell out of your app.
 
