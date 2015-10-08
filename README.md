@@ -45,7 +45,7 @@ It is possible to move all symbols (even when using Swift) into your app executa
 post_install do |installer|
   pods_target = installer.aggregate_targets.detect do |target|
   # Target label is either `Pods` or `Pods-#{name_of_your_main_target}` based on how complex your dependency graph is.
-    pods_target.label == "Pods"
+    target.label == "Pods"
   end
 
   puts '+ Removing framework dependencies'
