@@ -111,7 +111,7 @@ end
 
    ```
    if [[ "$CONFIGURATION" == "Test" ]]; then
-    "${SRCROOT}/Pods/Target Support Files/Pods-Register/Pods-Register-frameworks.sh"
+    "${SRCROOT}/Pods/Target Support Files/Pods-YourTarget/Pods-YourTarget-frameworks.sh"
    fi
    ```
 
