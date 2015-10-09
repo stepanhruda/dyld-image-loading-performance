@@ -106,6 +106,14 @@ end
 
 1. __Resource bundles don't exist, include all resources into your main bundle.__ Also edit your code in case it expects resource bundles to exist.
 
+1. If using Cocoapods, completely skip the _Embed Pod Frameworks_ step for configurations that use this workaround (e.g. not for tests).
+
+   ```
+   if [[ "$CONFIGURATION" == "Test" ]]; then
+    "${SRCROOT}/Pods/Target Support Files/Pods-Register/Pods-Register-frameworks.sh"
+   fi
+   ```
+
 ---
 
 ### Another workaround
