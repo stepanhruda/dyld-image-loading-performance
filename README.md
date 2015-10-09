@@ -1,4 +1,5 @@
 __tl;dr:__ _dyld takes too long to load frameworks, which makes apps slow to open_
+[rdar://22920190](http://www.openradar.me/radar?id=6332266275930112)
 
 ### Problem
 
@@ -32,6 +33,15 @@ End: 2015-09-30 14:33:00 +0000
 When using Instruments, only a fraction of the time taken is reported in time profiler. You can see below that only 215ms is attributed to _dyld_, while the thread was clearly blocked on `dlopen` for 3 seconds.
 
 <img width="698" alt="screen shot 2015-09-30 at 11 16 44 am" src="https://cloud.githubusercontent.com/assets/2835783/10197701/ddbe596e-6766-11e5-9046-28b8e52309b6.png">
+
+However, _dyld_ can profile the initialization time when passed `DYLD_PRINT_APIS` and `DYLD_PRINT_STATISTICS` environment variables. Combining this with "poor man's profiling" (pausing the process multiple times and seeing what the stack trace looks like), what seems to take the vast majority of time is phase 6 of loading a Mach-O image, more specifically the `ImageLoaderMachO::loadCodeSignature` function, even more specifically loading the signature from disk using `fcntl` ([full source](http://www.opensource.apple.com/source/dyld/dyld-353.2.3/src/ImageLoaderMachO.cpp)):
+
+```
+siginfo.fs_file_start=offsetInFatFile;				// start of mach-o slice in fat file 
+siginfo.fs_blob_start=(void*)(long)(codeSigCmd->dataoff);	// start of CD in mach-o file
+siginfo.fs_blob_size=codeSigCmd->datasize;			// size of CD
+int result = fcntl(fd, F_ADDFILESIGS, &siginfo);
+```
 
 ---
 
