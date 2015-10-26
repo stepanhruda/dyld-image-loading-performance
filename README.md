@@ -48,7 +48,7 @@ int result = fcntl(fd, F_ADDFILESIGS, &siginfo);
 
 ### Workaround
 
-It is possible to move all symbols (even when using Swift) into your app executable as suggested by the [Accelerator Project](https://github.com/johnno1962/Accelerator). In this way, _dyld_ doesn't need to load the frameworks on launch. This only works if you are compiling the framework from source.
+It is possible to move all symbols (even when using Swift) into your app executable as suggested by [Accelerator](https://github.com/johnno1962/Accelerator). In this way, _dyld_ doesn't need to load the frameworks on launch. This only works if you are compiling the framework from source.
 
 1. __Get rid of linker `-framework` flags and promise to provide `-filelist` instead.__ If you're using Cocoapods, it can be automated through a `post_install` step in Podfile.
 
