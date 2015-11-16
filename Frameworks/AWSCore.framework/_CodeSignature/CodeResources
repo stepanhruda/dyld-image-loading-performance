@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/AWSBolts.h</key>
+		<data>
+		tAb9GhGpZC75RCv2pz9fspau8SM=
+		</data>
 		<key>Headers/AWSCategory.h</key>
 		<data>
 		/m2wekRxc3gAAwW82qnJzSKoNLw=
@@ -18,83 +22,87 @@
 		</data>
 		<key>Headers/AWSCognitoIdentityModel.h</key>
 		<data>
-		vqHv+F60ximFMVlPL9WVMyW7JaI=
+		RCxX35eWQMgLEMZF4X4Fx4EO3Ic=
+		</data>
+		<key>Headers/AWSCognitoIdentityResources.h</key>
+		<data>
+		G8m+1WU8keTjK4aenQzCNHm144g=
 		</data>
 		<key>Headers/AWSCognitoIdentityService.h</key>
 		<data>
-		duYG5/4L+RqTpV9XKggSRb6XL7Q=
+		BxOwwSMW1+Ve0OL5XE4qPFpXB4Y=
 		</data>
 		<key>Headers/AWSCore-umbrella.h</key>
 		<data>
-		7Gt7Sxr/Lc6Pj17aSxd84wkPmlQ=
+		e8lEPhxwg7We27dZ8TLeFfALsxg=
 		</data>
 		<key>Headers/AWSCore.h</key>
 		<data>
-		YrAnMS/ghZ6KHCCh3UVzYmAH9Xk=
+		HoUfrLEKcS81l+EApwGkBtX7BLs=
 		</data>
 		<key>Headers/AWSCredentialsProvider.h</key>
 		<data>
-		1aR1UlAbsql+A9YBCAUlOk+Snh8=
+		n2n0m1s2AT5lEhJwN3F9yrElvys=
+		</data>
+		<key>Headers/AWSEXTKeyPathCoding.h</key>
+		<data>
+		sjCadWTc3YfYKCH+5pokLeaXAPc=
+		</data>
+		<key>Headers/AWSEXTRuntimeExtensions.h</key>
+		<data>
+		OtwHEYR5AfwIR86GguA+vSqafrM=
+		</data>
+		<key>Headers/AWSEXTScope.h</key>
+		<data>
+		ZPvnSk7JkoKfwK7EId8G3lrQ2EM=
+		</data>
+		<key>Headers/AWSExecutor.h</key>
+		<data>
+		aWh2cg81dNvCngHRCkZvOjX3mdk=
 		</data>
 		<key>Headers/AWSIdentityProvider.h</key>
 		<data>
-		9N+t5kr+HgjcSwmk2B9MxpkeMxU=
+		AIq9iLJpogZ+NnOfx50T7BazDRs=
 		</data>
 		<key>Headers/AWSLogging.h</key>
 		<data>
-		T9uffmf9k41v6AKIBVKRZXZgX50=
+		vIZ1Zc6vjNEE9HCcyhxlp2+6bMs=
 		</data>
-		<key>Headers/AWSMobileAnalytics.h</key>
+		<key>Headers/AWSMTLJSONAdapter.h</key>
 		<data>
-		juZaptojyXg7wLPD7o7Z6piGes8=
+		b1pLA6ZgzxjkudzgrawwddUXlAg=
 		</data>
-		<key>Headers/AWSMobileAnalyticsAppleMonetizationEventBuilder.h</key>
+		<key>Headers/AWSMTLManagedObjectAdapter.h</key>
 		<data>
-		IWDzYDirGj2VJtO6ANDDuMZGXnU=
+		8r+d9j5MMeRWMKDMupA3I8TVqag=
 		</data>
-		<key>Headers/AWSMobileAnalyticsConfiguration.h</key>
+		<key>Headers/AWSMTLModel+NSCoding.h</key>
 		<data>
-		9LY0yMMeVBUn/FDsmnZ/WenRU18=
+		mGmw/8HQle65O9fDIuvQ2/PmIGc=
 		</data>
-		<key>Headers/AWSMobileAnalyticsERS.h</key>
+		<key>Headers/AWSMTLModel.h</key>
 		<data>
-		cYlvJqil3fkgZVadEWmdGAUu0Ss=
+		NgMhmW3Gc+PRq5gbkJ35N/WsLYs=
 		</data>
-		<key>Headers/AWSMobileAnalyticsERSModel.h</key>
+		<key>Headers/AWSMTLReflection.h</key>
 		<data>
-		JX2Qq0HNbZMbpsdThHVFu3M9cXM=
+		i4FGJpql7ov3K+pmon2A0DG73AA=
 		</data>
-		<key>Headers/AWSMobileAnalyticsERSService.h</key>
+		<key>Headers/AWSMTLValueTransformer.h</key>
 		<data>
-		SjIcHL8j0OMHUM9L2dEL0OXuv+0=
+		7cEGnHZi3nH+i8N83quc1+AsxAg=
 		</data>
-		<key>Headers/AWSMobileAnalyticsEvent.h</key>
+		<key>Headers/AWSMantle.h</key>
 		<data>
-		WbPc1R2ze1OpDOn51d9nvDqHavk=
-		</data>
-		<key>Headers/AWSMobileAnalyticsEventClient.h</key>
-		<data>
-		iDuW1Fs0VjfUpS0E3QQk8T59rm0=
-		</data>
-		<key>Headers/AWSMobileAnalyticsMonetizationEventBuilder.h</key>
-		<data>
-		WAtl4HcsnE+wokOzOi6ij8qrG/U=
-		</data>
-		<key>Headers/AWSMobileAnalyticsOptions.h</key>
-		<data>
-		BwDFRQnPhNzAS8vOjdaR9cKXDjU=
-		</data>
-		<key>Headers/AWSMobileAnalyticsVirtualMonetizationEventBuilder.h</key>
-		<data>
-		SrKMTTtSNQ4sze0jpOC+bYTE3+U=
+		1v/xR1iC1ANIo0jW8X1Zm4//Fd8=
 		</data>
 		<key>Headers/AWSModel.h</key>
 		<data>
-		DxEafZVseU2A8jm7OZhmM03DalU=
+		bDvsfVGMYOGuzmQF/WFwyVhTgbo=
 		</data>
 		<key>Headers/AWSNetworking.h</key>
 		<data>
-		nfxWFVJ5gbCKuQUImv5+jd3y1uY=
+		ZMrAHB/gMRyUYeq+NKwpBIZegWo=
 		</data>
 		<key>Headers/AWSSTS.h</key>
 		<data>
@@ -104,29 +112,41 @@
 		<data>
 		rxM01URpKlFIvuwzpZG9TgEYkiQ=
 		</data>
+		<key>Headers/AWSSTSResources.h</key>
+		<data>
+		fQfvisYLnpM6g7lpPe6P48FueKQ=
+		</data>
 		<key>Headers/AWSSTSService.h</key>
 		<data>
-		sq1Gl9jGej+BFg1S8muohNbgPAc=
+		dWi9pYcvshcYuIUrDFmHEPmZ6oI=
 		</data>
 		<key>Headers/AWSSerialization.h</key>
 		<data>
-		kxPolP0fLgyiHsGpZXV0KcOCpjE=
+		o7lOyhgss3IYMMqJgQPf51jKDD8=
 		</data>
 		<key>Headers/AWSService.h</key>
 		<data>
-		c1iaMY/5tnbC8Vxva9yHsxT0bBU=
+		KAsOY/BYAJ6o97nZCrkIZ8NmL5w=
 		</data>
 		<key>Headers/AWSServiceEnum.h</key>
 		<data>
-		vM+9WCtCyfX3mZ2c6pPLSyrXz1k=
+		uH/3a5qOIK613TExgwvojbL24qc=
 		</data>
 		<key>Headers/AWSSignature.h</key>
 		<data>
-		6iEqzks9w27vRvEZhGajKKGzkuA=
+		QMNwhxcy3vDMX+aanB5o+zW2VF0=
 		</data>
 		<key>Headers/AWSSynchronizedMutableDictionary.h</key>
 		<data>
 		BMmWi61a3amFK6Ts59dOSTwGgik=
+		</data>
+		<key>Headers/AWSTask.h</key>
+		<data>
+		os9k3XBEx/b/AdN7YO7eL1Sz6yY=
+		</data>
+		<key>Headers/AWSTaskCompletionSource.h</key>
+		<data>
+		3B5tH7XPvOaj4yTx0PVgJbkprkw=
 		</data>
 		<key>Headers/AWSURLRequestRetryHandler.h</key>
 		<data>
@@ -134,11 +154,11 @@
 		</data>
 		<key>Headers/AWSURLRequestSerialization.h</key>
 		<data>
-		RQ2U0eRyr81/fWcGCAPstoFh7jY=
+		BSTX9gN9UmZPZy+AAKXghssfyxE=
 		</data>
 		<key>Headers/AWSURLResponseSerialization.h</key>
 		<data>
-		chyHJcoVxZGoPwkZwKqNmhtxHPA=
+		US0s5Bm5JhxeuVjljIZSvJea+/8=
 		</data>
 		<key>Headers/AWSURLSessionManager.h</key>
 		<data>
@@ -148,325 +168,105 @@
 		<data>
 		mjtlvDaSHSmvirmTSV04hXOny4s=
 		</data>
-		<key>Headers/AWSXMLWriter.h</key>
+		<key>Headers/AWSmetamacros.h</key>
 		<data>
-		+eT83265jOezLAm5eXbrU5zt1uQ=
+		/urguvf1G1OQS4/DDk3RwQpXycE=
 		</data>
-		<key>Headers/MobileAnalytics.h</key>
+		<key>Headers/NSArray+AWSMTLManipulationAdditions.h</key>
 		<data>
-		FysIwpp5dsHqeQLuZxPO1XVNf5Y=
+		KhtYRLcH0HsgEiLuktUxZiGulPM=
+		</data>
+		<key>Headers/NSDictionary+AWSMTLManipulationAdditions.h</key>
+		<data>
+		dj8r3xYxBH8B76tbGRR0CWn3/7c=
+		</data>
+		<key>Headers/NSError+AWSMTLModelException.h</key>
+		<data>
+		bhx9/R30Sh8MwMYPb8gcr1GH2eI=
+		</data>
+		<key>Headers/NSObject+AWSMTLComparisonAdditions.h</key>
+		<data>
+		30VQc+957PkI3OiFmAjgSVivE6A=
+		</data>
+		<key>Headers/NSValueTransformer+AWSMTLInversionAdditions.h</key>
+		<data>
+		LFWBFCL7xKsM1vkCA5bVHfwGfN4=
+		</data>
+		<key>Headers/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h</key>
+		<data>
+		3mYTH78M9e/Kl4nHhOSSID/bPTY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rEjlNi+B2wjPC4E2sWiryc5guzs=
+		dxlrUCjB2uapGsbL3CjqwOfcPeI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		ckroEvapNyTuvKyZ8oPWD3n6REA=
+		eX2rKeCFmEbd0rnkcff/7hI4uVc=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsActiveSessionState.h</key>
+		<key>PrivateHeaders/AWSFMDB.h</key>
 		<data>
-		NXGINPaRbgXgrPRo5Ma7zNlO0tk=
+		31/Yr9sETovr4I9m0eBtr2+gj0M=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsBufferedReader.h</key>
+		<key>PrivateHeaders/AWSFMDatabase.h</key>
 		<data>
-		+F3l3fkAp6hdYPOB4UrYBDL8ZpU=
+		9kZLs1AFr7KHqOGJuMqE3DC+5z4=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsClientContextInterceptor.h</key>
+		<key>PrivateHeaders/AWSFMDatabaseAdditions.h</key>
 		<data>
-		UEDZSr2t6rdbl+IgPj0OwQ2DIt0=
+		nx1bNsJxxzdVKoJ/dWPZcDN7b8g=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsConfigurationKeys.h</key>
+		<key>PrivateHeaders/AWSFMDatabasePool.h</key>
 		<data>
-		c6fAL83r0FugcZWv1u6MgqY303g=
+		Ph7qU+wScGpJQOwPICwhpNZ1IPE=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsConfiguring.h</key>
+		<key>PrivateHeaders/AWSFMDatabaseQueue.h</key>
 		<data>
-		1D+vx7MrfYMhdy0vT0qSL4d9AHY=
+		DuIEOu+4cjhTfMhesm5F93REdSI=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsConnectivity.h</key>
+		<key>PrivateHeaders/AWSFMResultSet.h</key>
 		<data>
-		ZnzPCi0amxKuWOB3+4E35gEO2j8=
+		CZwFwh9uB7bPxCRpA4+/sbKZSBQ=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsConnectivityPolicy.h</key>
+		<key>PrivateHeaders/AWSGZIP.h</key>
 		<data>
-		ftQzruYLyQKBvRNHh2kkhHDVqjY=
+		0SCqkhAfjp/ZidrhYFqzxF94D84=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsConstants.h</key>
+		<key>PrivateHeaders/AWSReachability.h</key>
 		<data>
-		R8LqABBtstKlkIEB6b6LGUwqZvI=
+		Mzt0yDsA9gjl+1lXCJ0KsjmKi58=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsContext.h</key>
+		<key>PrivateHeaders/AWSTMCache.h</key>
 		<data>
-		FE2aGxU4uSD5X4RU96vE5afnB+c=
+		avPrn+D9PYq72e3qeklTCtEGC40=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsCountDownLatch.h</key>
+		<key>PrivateHeaders/AWSTMDiskCache.h</key>
 		<data>
-		Gb2V+qHyWznDiC/oBVIlEUhq//E=
+		LhbPp/rYPowH2fyUqvv/k++6Was=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDateUtils.h</key>
+		<key>PrivateHeaders/AWSTMMemoryCache.h</key>
 		<data>
-		3h0gOqvBjhOInlaf/BtSoGdLkeE=
+		AOdGLlrF7biWZ2wpElyuqyP913A=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultContext.h</key>
+		<key>PrivateHeaders/AWSUICKeyChainStore.h</key>
 		<data>
-		+j6hGbSOrwMUHndI9bl2GEEysb8=
+		r/gPq7DzAvHUStCL6mzELGgBTrw=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultDeliveryClient.h</key>
+		<key>PrivateHeaders/AWSXMLDictionary.h</key>
 		<data>
-		jQSbYIpfiRkQ62FoXfOMxbJ21E0=
+		JIYMpgcYXx92O6QKyAFj5bRzgK8=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultEvent.h</key>
+		<key>PrivateHeaders/AWSXMLWriter.h</key>
 		<data>
-		3q1v48eVPCgiWVSd7IMBW/+K/HA=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultEventClient.h</key>
-		<data>
-		hs4A6WH4MtXXzA84DDKXBOvinj8=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultFileManager.h</key>
-		<data>
-		QQ9rA3x6LTDObAio581IXjn+/N0=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultHttpClient.h</key>
-		<data>
-		c8alpBoydDl/TUaUPAjQJoK57eI=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultInterceptor.h</key>
-		<data>
-		e9RpAulbwgaEGyKIWuVp7kgN4F8=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultOptions.h</key>
-		<data>
-		ay+i7t4EfqIscH4xjmJb7yiFTLY=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultRequest.h</key>
-		<data>
-		sjqDhwQJS9j05uH3/OvZPLo9hfA=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultResponse.h</key>
-		<data>
-		Kj9HDpDssDsHeuOgOy08D1ep5BQ=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultSessionClient+SessionState.h</key>
-		<data>
-		MMrfpKIAA4OOJVrlTdptDRZu6DU=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultSessionClient.h</key>
-		<data>
-		FRDf47c2UQdjISaUaJHyzmovXuQ=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDelayedBlock.h</key>
-		<data>
-		NuZKZ3MgRh2u3rsuQysHiW4ABA0=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDeliveryClient.h</key>
-		<data>
-		j5Um/y0umav5otvSW2hlXcJIRbw=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDeliveryPolicy.h</key>
-		<data>
-		HlRjpO2mESlmcbLiovK57KDXea0=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDeliveryPolicyFactory.h</key>
-		<data>
-		U1DMC2+WON2P5jhO9mQ+4Yd5FYw=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsERSRequestBuilder.h</key>
-		<data>
-		YMC4ZNNZ3zLwRS/HQ7PtF7f+Beg=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsEncryptedBufferedReader.h</key>
-		<data>
-		9uHZTFjuIPwIwqKQg7PRYGNgcus=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsErrorUtils.h</key>
-		<data>
-		EKVF2x1Up16ykWW/taTJeI0mOEY=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsEventConstraintDecorator.h</key>
-		<data>
-		BfVwj9IFuS4R/VME7ZR+FckMc8E=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsEventObserver.h</key>
-		<data>
-		xAYn6LXBNnp0DvUNbc4j4k1MS2g=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsEventStore.h</key>
-		<data>
-		TFDD9ioOXCOpVRRHMj6FotUYgOs=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsFile.h</key>
-		<data>
-		GFbgFTsbLWxuRG6z6zHGZ/BX5vg=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsFileEventStore.h</key>
-		<data>
-		Vqei9OOrDm+hqOinK2ijFpdbmTI=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsFileManager.h</key>
-		<data>
-		kcvTUURQdQ22kg5WFiysKm2Gznc=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsHttpCachingConfiguration.h</key>
-		<data>
-		zHbaTvhaD36Xkn1MlIkZAsNyNkc=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsHttpClient.h</key>
-		<data>
-		sdDFdNNFImOPdxn+LkZM1ip72KA=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsHttpConstants.h</key>
-		<data>
-		ZPG2WUUWj4HHD5I+Xep7hPKTcMI=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsIOSConnectivity.h</key>
-		<data>
-		F0ZW2795QbPrBTqaQAnD9jp5+pk=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsIOSLifeCycleManager.h</key>
-		<data>
-		/6WSVWuZ9fzDoz5fDMLpwnQNBTo=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsIOSPreferences.h</key>
-		<data>
-		nP5hrPtnQOB2zH/5WFpHy7pVkSk=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsIOSSystem.h</key>
-		<data>
-		UGW5/X9IcyHhz/mMSSi1oC/vnZ4=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsInactiveSessionState.h</key>
-		<data>
-		8D1dWfRzkUMhoU9xTQbplFZENNc=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsInstanceIdInterceptor.h</key>
-		<data>
-		QHbuzK7TjLFXI5Cj39yWS8gjcAk=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsInterceptor.h</key>
-		<data>
-		lExW3eCGrodqLnwKcRGO/LUYUq8=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsInternalEvent.h</key>
-		<data>
-		X89nZv0MG/SDcN+DVyiIUz7bytk=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsInternalEventClient.h</key>
-		<data>
-		CYReKxYwZ9HQmi6KC2cEYD1kbSA=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsJSONSerializer.h</key>
-		<data>
-		xlh+w5QbXCKCsvtt4H18BcECiBU=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsLifeCycleManager.h</key>
-		<data>
-		dTTe5huzpCeO8CmLC9T6EdxV39Q=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsLogInterceptor.h</key>
-		<data>
-		ZNFMXu+SP/KAWN0yHfU569YfpkM=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsPausedSessionState.h</key>
-		<data>
-		6/HfowYeGdpOv01vouJ6epo00xI=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsPreferences.h</key>
-		<data>
-		GsqCmaCRhuCoZgI4d4DgV7ztUJU=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsPrefsUniqueIdService.h</key>
-		<data>
-		HzDgt4OqYX5HGY5+fzgV6eDA6F8=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsRandomUUIDGenerator.h</key>
-		<data>
-		lflsBz9pm2IsjSi7HFNeHW/xJlU=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsRequest.h</key>
-		<data>
-		g0xTwpV3s1199zPy2l70EUd1GSQ=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsRequestTimingInterceptor.h</key>
-		<data>
-		WsBU1i5PUN4uARxvEOzkZHA5pnU=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsResponse.h</key>
-		<data>
-		WMam2/dKB8gaHkHhm9iQcK8pqmU=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSDKInfo.h</key>
-		<data>
-		uPrAwNrIzhLwcQwnB7DJaOQbjok=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSDKInfoInterceptor.h</key>
-		<data>
-		2Wl74ocVe9WlJuyXA5YySlrxtYs=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSerializable.h</key>
-		<data>
-		AzwJjSJPKgF0DydU21iIhj6WPGM=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSerializerFactory.h</key>
-		<data>
-		M1ikEb8yG06JnQ7E6Kjdu3sdFRw=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSession.h</key>
-		<data>
-		sZh0x1ULow2yrl29sSUL69GkBMI=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSessionClient.h</key>
-		<data>
-		TFD6sRmTzaOiP6Pv3KJlBVyoIlA=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSessionClientState.h</key>
-		<data>
-		CxMCYN7YZ1mv4UsLwlk6eGO8u/0=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSessionStore.h</key>
-		<data>
-		2wtt9QzX0WTntLEnhj9OfgO954A=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsStringUtils.h</key>
-		<data>
-		AlKfOd8KH+IRj/uPXzKeiBtfF08=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSubmissionTimePolicy.h</key>
-		<data>
-		sOCvnYvSipwPLMpCcFX+5Oy2IeM=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSystem.h</key>
-		<data>
-		zBoKtMixkQQCUDPqZz3GX0idsOA=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsUniqueIdGenerator.h</key>
-		<data>
-		7NF9fj3JKE0UzIE0Nrk5kCxnUAo=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsUniqueIdService.h</key>
-		<data>
-		NL7Ea1uCbg99N+adV7uAAcqg2Ww=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsWriter.h</key>
-		<data>
-		uJqFS6YQmhwPuS6+cl26y29VQvM=
-		</data>
-		<key>cognito-identity-2014-06-30.json</key>
-		<data>
-		NA1F7thTufHxcutds/75kETmTOQ=
-		</data>
-		<key>mobileanalytics-2014-06-30.json</key>
-		<data>
-		6lrg+k4f7sLf38io9fYSI1NyjZk=
-		</data>
-		<key>sts-2011-06-15.json</key>
-		<data>
-		zaRybGNTV4JCnVYHBS+8gerb/q0=
+		+eT83265jOezLAm5eXbrU5zt1uQ=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/AWSBolts.h</key>
+		<data>
+		tAb9GhGpZC75RCv2pz9fspau8SM=
+		</data>
 		<key>Headers/AWSCategory.h</key>
 		<data>
 		/m2wekRxc3gAAwW82qnJzSKoNLw=
@@ -481,83 +281,87 @@
 		</data>
 		<key>Headers/AWSCognitoIdentityModel.h</key>
 		<data>
-		vqHv+F60ximFMVlPL9WVMyW7JaI=
+		RCxX35eWQMgLEMZF4X4Fx4EO3Ic=
+		</data>
+		<key>Headers/AWSCognitoIdentityResources.h</key>
+		<data>
+		G8m+1WU8keTjK4aenQzCNHm144g=
 		</data>
 		<key>Headers/AWSCognitoIdentityService.h</key>
 		<data>
-		duYG5/4L+RqTpV9XKggSRb6XL7Q=
+		BxOwwSMW1+Ve0OL5XE4qPFpXB4Y=
 		</data>
 		<key>Headers/AWSCore-umbrella.h</key>
 		<data>
-		7Gt7Sxr/Lc6Pj17aSxd84wkPmlQ=
+		e8lEPhxwg7We27dZ8TLeFfALsxg=
 		</data>
 		<key>Headers/AWSCore.h</key>
 		<data>
-		YrAnMS/ghZ6KHCCh3UVzYmAH9Xk=
+		HoUfrLEKcS81l+EApwGkBtX7BLs=
 		</data>
 		<key>Headers/AWSCredentialsProvider.h</key>
 		<data>
-		1aR1UlAbsql+A9YBCAUlOk+Snh8=
+		n2n0m1s2AT5lEhJwN3F9yrElvys=
+		</data>
+		<key>Headers/AWSEXTKeyPathCoding.h</key>
+		<data>
+		sjCadWTc3YfYKCH+5pokLeaXAPc=
+		</data>
+		<key>Headers/AWSEXTRuntimeExtensions.h</key>
+		<data>
+		OtwHEYR5AfwIR86GguA+vSqafrM=
+		</data>
+		<key>Headers/AWSEXTScope.h</key>
+		<data>
+		ZPvnSk7JkoKfwK7EId8G3lrQ2EM=
+		</data>
+		<key>Headers/AWSExecutor.h</key>
+		<data>
+		aWh2cg81dNvCngHRCkZvOjX3mdk=
 		</data>
 		<key>Headers/AWSIdentityProvider.h</key>
 		<data>
-		9N+t5kr+HgjcSwmk2B9MxpkeMxU=
+		AIq9iLJpogZ+NnOfx50T7BazDRs=
 		</data>
 		<key>Headers/AWSLogging.h</key>
 		<data>
-		T9uffmf9k41v6AKIBVKRZXZgX50=
+		vIZ1Zc6vjNEE9HCcyhxlp2+6bMs=
 		</data>
-		<key>Headers/AWSMobileAnalytics.h</key>
+		<key>Headers/AWSMTLJSONAdapter.h</key>
 		<data>
-		juZaptojyXg7wLPD7o7Z6piGes8=
+		b1pLA6ZgzxjkudzgrawwddUXlAg=
 		</data>
-		<key>Headers/AWSMobileAnalyticsAppleMonetizationEventBuilder.h</key>
+		<key>Headers/AWSMTLManagedObjectAdapter.h</key>
 		<data>
-		IWDzYDirGj2VJtO6ANDDuMZGXnU=
+		8r+d9j5MMeRWMKDMupA3I8TVqag=
 		</data>
-		<key>Headers/AWSMobileAnalyticsConfiguration.h</key>
+		<key>Headers/AWSMTLModel+NSCoding.h</key>
 		<data>
-		9LY0yMMeVBUn/FDsmnZ/WenRU18=
+		mGmw/8HQle65O9fDIuvQ2/PmIGc=
 		</data>
-		<key>Headers/AWSMobileAnalyticsERS.h</key>
+		<key>Headers/AWSMTLModel.h</key>
 		<data>
-		cYlvJqil3fkgZVadEWmdGAUu0Ss=
+		NgMhmW3Gc+PRq5gbkJ35N/WsLYs=
 		</data>
-		<key>Headers/AWSMobileAnalyticsERSModel.h</key>
+		<key>Headers/AWSMTLReflection.h</key>
 		<data>
-		JX2Qq0HNbZMbpsdThHVFu3M9cXM=
+		i4FGJpql7ov3K+pmon2A0DG73AA=
 		</data>
-		<key>Headers/AWSMobileAnalyticsERSService.h</key>
+		<key>Headers/AWSMTLValueTransformer.h</key>
 		<data>
-		SjIcHL8j0OMHUM9L2dEL0OXuv+0=
+		7cEGnHZi3nH+i8N83quc1+AsxAg=
 		</data>
-		<key>Headers/AWSMobileAnalyticsEvent.h</key>
+		<key>Headers/AWSMantle.h</key>
 		<data>
-		WbPc1R2ze1OpDOn51d9nvDqHavk=
-		</data>
-		<key>Headers/AWSMobileAnalyticsEventClient.h</key>
-		<data>
-		iDuW1Fs0VjfUpS0E3QQk8T59rm0=
-		</data>
-		<key>Headers/AWSMobileAnalyticsMonetizationEventBuilder.h</key>
-		<data>
-		WAtl4HcsnE+wokOzOi6ij8qrG/U=
-		</data>
-		<key>Headers/AWSMobileAnalyticsOptions.h</key>
-		<data>
-		BwDFRQnPhNzAS8vOjdaR9cKXDjU=
-		</data>
-		<key>Headers/AWSMobileAnalyticsVirtualMonetizationEventBuilder.h</key>
-		<data>
-		SrKMTTtSNQ4sze0jpOC+bYTE3+U=
+		1v/xR1iC1ANIo0jW8X1Zm4//Fd8=
 		</data>
 		<key>Headers/AWSModel.h</key>
 		<data>
-		DxEafZVseU2A8jm7OZhmM03DalU=
+		bDvsfVGMYOGuzmQF/WFwyVhTgbo=
 		</data>
 		<key>Headers/AWSNetworking.h</key>
 		<data>
-		nfxWFVJ5gbCKuQUImv5+jd3y1uY=
+		ZMrAHB/gMRyUYeq+NKwpBIZegWo=
 		</data>
 		<key>Headers/AWSSTS.h</key>
 		<data>
@@ -567,29 +371,41 @@
 		<data>
 		rxM01URpKlFIvuwzpZG9TgEYkiQ=
 		</data>
+		<key>Headers/AWSSTSResources.h</key>
+		<data>
+		fQfvisYLnpM6g7lpPe6P48FueKQ=
+		</data>
 		<key>Headers/AWSSTSService.h</key>
 		<data>
-		sq1Gl9jGej+BFg1S8muohNbgPAc=
+		dWi9pYcvshcYuIUrDFmHEPmZ6oI=
 		</data>
 		<key>Headers/AWSSerialization.h</key>
 		<data>
-		kxPolP0fLgyiHsGpZXV0KcOCpjE=
+		o7lOyhgss3IYMMqJgQPf51jKDD8=
 		</data>
 		<key>Headers/AWSService.h</key>
 		<data>
-		c1iaMY/5tnbC8Vxva9yHsxT0bBU=
+		KAsOY/BYAJ6o97nZCrkIZ8NmL5w=
 		</data>
 		<key>Headers/AWSServiceEnum.h</key>
 		<data>
-		vM+9WCtCyfX3mZ2c6pPLSyrXz1k=
+		uH/3a5qOIK613TExgwvojbL24qc=
 		</data>
 		<key>Headers/AWSSignature.h</key>
 		<data>
-		6iEqzks9w27vRvEZhGajKKGzkuA=
+		QMNwhxcy3vDMX+aanB5o+zW2VF0=
 		</data>
 		<key>Headers/AWSSynchronizedMutableDictionary.h</key>
 		<data>
 		BMmWi61a3amFK6Ts59dOSTwGgik=
+		</data>
+		<key>Headers/AWSTask.h</key>
+		<data>
+		os9k3XBEx/b/AdN7YO7eL1Sz6yY=
+		</data>
+		<key>Headers/AWSTaskCompletionSource.h</key>
+		<data>
+		3B5tH7XPvOaj4yTx0PVgJbkprkw=
 		</data>
 		<key>Headers/AWSURLRequestRetryHandler.h</key>
 		<data>
@@ -597,11 +413,11 @@
 		</data>
 		<key>Headers/AWSURLRequestSerialization.h</key>
 		<data>
-		RQ2U0eRyr81/fWcGCAPstoFh7jY=
+		BSTX9gN9UmZPZy+AAKXghssfyxE=
 		</data>
 		<key>Headers/AWSURLResponseSerialization.h</key>
 		<data>
-		chyHJcoVxZGoPwkZwKqNmhtxHPA=
+		US0s5Bm5JhxeuVjljIZSvJea+/8=
 		</data>
 		<key>Headers/AWSURLSessionManager.h</key>
 		<data>
@@ -611,317 +427,93 @@
 		<data>
 		mjtlvDaSHSmvirmTSV04hXOny4s=
 		</data>
-		<key>Headers/AWSXMLWriter.h</key>
+		<key>Headers/AWSmetamacros.h</key>
 		<data>
-		+eT83265jOezLAm5eXbrU5zt1uQ=
+		/urguvf1G1OQS4/DDk3RwQpXycE=
 		</data>
-		<key>Headers/MobileAnalytics.h</key>
+		<key>Headers/NSArray+AWSMTLManipulationAdditions.h</key>
 		<data>
-		FysIwpp5dsHqeQLuZxPO1XVNf5Y=
+		KhtYRLcH0HsgEiLuktUxZiGulPM=
+		</data>
+		<key>Headers/NSDictionary+AWSMTLManipulationAdditions.h</key>
+		<data>
+		dj8r3xYxBH8B76tbGRR0CWn3/7c=
+		</data>
+		<key>Headers/NSError+AWSMTLModelException.h</key>
+		<data>
+		bhx9/R30Sh8MwMYPb8gcr1GH2eI=
+		</data>
+		<key>Headers/NSObject+AWSMTLComparisonAdditions.h</key>
+		<data>
+		30VQc+957PkI3OiFmAjgSVivE6A=
+		</data>
+		<key>Headers/NSValueTransformer+AWSMTLInversionAdditions.h</key>
+		<data>
+		LFWBFCL7xKsM1vkCA5bVHfwGfN4=
+		</data>
+		<key>Headers/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h</key>
+		<data>
+		3mYTH78M9e/Kl4nHhOSSID/bPTY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		ckroEvapNyTuvKyZ8oPWD3n6REA=
+		eX2rKeCFmEbd0rnkcff/7hI4uVc=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsActiveSessionState.h</key>
+		<key>PrivateHeaders/AWSFMDB.h</key>
 		<data>
-		NXGINPaRbgXgrPRo5Ma7zNlO0tk=
+		31/Yr9sETovr4I9m0eBtr2+gj0M=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsBufferedReader.h</key>
+		<key>PrivateHeaders/AWSFMDatabase.h</key>
 		<data>
-		+F3l3fkAp6hdYPOB4UrYBDL8ZpU=
+		9kZLs1AFr7KHqOGJuMqE3DC+5z4=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsClientContextInterceptor.h</key>
+		<key>PrivateHeaders/AWSFMDatabaseAdditions.h</key>
 		<data>
-		UEDZSr2t6rdbl+IgPj0OwQ2DIt0=
+		nx1bNsJxxzdVKoJ/dWPZcDN7b8g=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsConfigurationKeys.h</key>
+		<key>PrivateHeaders/AWSFMDatabasePool.h</key>
 		<data>
-		c6fAL83r0FugcZWv1u6MgqY303g=
+		Ph7qU+wScGpJQOwPICwhpNZ1IPE=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsConfiguring.h</key>
+		<key>PrivateHeaders/AWSFMDatabaseQueue.h</key>
 		<data>
-		1D+vx7MrfYMhdy0vT0qSL4d9AHY=
+		DuIEOu+4cjhTfMhesm5F93REdSI=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsConnectivity.h</key>
+		<key>PrivateHeaders/AWSFMResultSet.h</key>
 		<data>
-		ZnzPCi0amxKuWOB3+4E35gEO2j8=
+		CZwFwh9uB7bPxCRpA4+/sbKZSBQ=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsConnectivityPolicy.h</key>
+		<key>PrivateHeaders/AWSGZIP.h</key>
 		<data>
-		ftQzruYLyQKBvRNHh2kkhHDVqjY=
+		0SCqkhAfjp/ZidrhYFqzxF94D84=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsConstants.h</key>
+		<key>PrivateHeaders/AWSReachability.h</key>
 		<data>
-		R8LqABBtstKlkIEB6b6LGUwqZvI=
+		Mzt0yDsA9gjl+1lXCJ0KsjmKi58=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsContext.h</key>
+		<key>PrivateHeaders/AWSTMCache.h</key>
 		<data>
-		FE2aGxU4uSD5X4RU96vE5afnB+c=
+		avPrn+D9PYq72e3qeklTCtEGC40=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsCountDownLatch.h</key>
+		<key>PrivateHeaders/AWSTMDiskCache.h</key>
 		<data>
-		Gb2V+qHyWznDiC/oBVIlEUhq//E=
+		LhbPp/rYPowH2fyUqvv/k++6Was=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDateUtils.h</key>
+		<key>PrivateHeaders/AWSTMMemoryCache.h</key>
 		<data>
-		3h0gOqvBjhOInlaf/BtSoGdLkeE=
+		AOdGLlrF7biWZ2wpElyuqyP913A=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultContext.h</key>
+		<key>PrivateHeaders/AWSUICKeyChainStore.h</key>
 		<data>
-		+j6hGbSOrwMUHndI9bl2GEEysb8=
+		r/gPq7DzAvHUStCL6mzELGgBTrw=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultDeliveryClient.h</key>
+		<key>PrivateHeaders/AWSXMLDictionary.h</key>
 		<data>
-		jQSbYIpfiRkQ62FoXfOMxbJ21E0=
+		JIYMpgcYXx92O6QKyAFj5bRzgK8=
 		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultEvent.h</key>
+		<key>PrivateHeaders/AWSXMLWriter.h</key>
 		<data>
-		3q1v48eVPCgiWVSd7IMBW/+K/HA=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultEventClient.h</key>
-		<data>
-		hs4A6WH4MtXXzA84DDKXBOvinj8=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultFileManager.h</key>
-		<data>
-		QQ9rA3x6LTDObAio581IXjn+/N0=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultHttpClient.h</key>
-		<data>
-		c8alpBoydDl/TUaUPAjQJoK57eI=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultInterceptor.h</key>
-		<data>
-		e9RpAulbwgaEGyKIWuVp7kgN4F8=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultOptions.h</key>
-		<data>
-		ay+i7t4EfqIscH4xjmJb7yiFTLY=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultRequest.h</key>
-		<data>
-		sjqDhwQJS9j05uH3/OvZPLo9hfA=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultResponse.h</key>
-		<data>
-		Kj9HDpDssDsHeuOgOy08D1ep5BQ=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultSessionClient+SessionState.h</key>
-		<data>
-		MMrfpKIAA4OOJVrlTdptDRZu6DU=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDefaultSessionClient.h</key>
-		<data>
-		FRDf47c2UQdjISaUaJHyzmovXuQ=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDelayedBlock.h</key>
-		<data>
-		NuZKZ3MgRh2u3rsuQysHiW4ABA0=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDeliveryClient.h</key>
-		<data>
-		j5Um/y0umav5otvSW2hlXcJIRbw=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDeliveryPolicy.h</key>
-		<data>
-		HlRjpO2mESlmcbLiovK57KDXea0=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsDeliveryPolicyFactory.h</key>
-		<data>
-		U1DMC2+WON2P5jhO9mQ+4Yd5FYw=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsERSRequestBuilder.h</key>
-		<data>
-		YMC4ZNNZ3zLwRS/HQ7PtF7f+Beg=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsEncryptedBufferedReader.h</key>
-		<data>
-		9uHZTFjuIPwIwqKQg7PRYGNgcus=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsErrorUtils.h</key>
-		<data>
-		EKVF2x1Up16ykWW/taTJeI0mOEY=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsEventConstraintDecorator.h</key>
-		<data>
-		BfVwj9IFuS4R/VME7ZR+FckMc8E=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsEventObserver.h</key>
-		<data>
-		xAYn6LXBNnp0DvUNbc4j4k1MS2g=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsEventStore.h</key>
-		<data>
-		TFDD9ioOXCOpVRRHMj6FotUYgOs=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsFile.h</key>
-		<data>
-		GFbgFTsbLWxuRG6z6zHGZ/BX5vg=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsFileEventStore.h</key>
-		<data>
-		Vqei9OOrDm+hqOinK2ijFpdbmTI=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsFileManager.h</key>
-		<data>
-		kcvTUURQdQ22kg5WFiysKm2Gznc=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsHttpCachingConfiguration.h</key>
-		<data>
-		zHbaTvhaD36Xkn1MlIkZAsNyNkc=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsHttpClient.h</key>
-		<data>
-		sdDFdNNFImOPdxn+LkZM1ip72KA=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsHttpConstants.h</key>
-		<data>
-		ZPG2WUUWj4HHD5I+Xep7hPKTcMI=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsIOSConnectivity.h</key>
-		<data>
-		F0ZW2795QbPrBTqaQAnD9jp5+pk=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsIOSLifeCycleManager.h</key>
-		<data>
-		/6WSVWuZ9fzDoz5fDMLpwnQNBTo=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsIOSPreferences.h</key>
-		<data>
-		nP5hrPtnQOB2zH/5WFpHy7pVkSk=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsIOSSystem.h</key>
-		<data>
-		UGW5/X9IcyHhz/mMSSi1oC/vnZ4=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsInactiveSessionState.h</key>
-		<data>
-		8D1dWfRzkUMhoU9xTQbplFZENNc=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsInstanceIdInterceptor.h</key>
-		<data>
-		QHbuzK7TjLFXI5Cj39yWS8gjcAk=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsInterceptor.h</key>
-		<data>
-		lExW3eCGrodqLnwKcRGO/LUYUq8=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsInternalEvent.h</key>
-		<data>
-		X89nZv0MG/SDcN+DVyiIUz7bytk=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsInternalEventClient.h</key>
-		<data>
-		CYReKxYwZ9HQmi6KC2cEYD1kbSA=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsJSONSerializer.h</key>
-		<data>
-		xlh+w5QbXCKCsvtt4H18BcECiBU=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsLifeCycleManager.h</key>
-		<data>
-		dTTe5huzpCeO8CmLC9T6EdxV39Q=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsLogInterceptor.h</key>
-		<data>
-		ZNFMXu+SP/KAWN0yHfU569YfpkM=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsPausedSessionState.h</key>
-		<data>
-		6/HfowYeGdpOv01vouJ6epo00xI=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsPreferences.h</key>
-		<data>
-		GsqCmaCRhuCoZgI4d4DgV7ztUJU=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsPrefsUniqueIdService.h</key>
-		<data>
-		HzDgt4OqYX5HGY5+fzgV6eDA6F8=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsRandomUUIDGenerator.h</key>
-		<data>
-		lflsBz9pm2IsjSi7HFNeHW/xJlU=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsRequest.h</key>
-		<data>
-		g0xTwpV3s1199zPy2l70EUd1GSQ=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsRequestTimingInterceptor.h</key>
-		<data>
-		WsBU1i5PUN4uARxvEOzkZHA5pnU=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsResponse.h</key>
-		<data>
-		WMam2/dKB8gaHkHhm9iQcK8pqmU=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSDKInfo.h</key>
-		<data>
-		uPrAwNrIzhLwcQwnB7DJaOQbjok=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSDKInfoInterceptor.h</key>
-		<data>
-		2Wl74ocVe9WlJuyXA5YySlrxtYs=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSerializable.h</key>
-		<data>
-		AzwJjSJPKgF0DydU21iIhj6WPGM=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSerializerFactory.h</key>
-		<data>
-		M1ikEb8yG06JnQ7E6Kjdu3sdFRw=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSession.h</key>
-		<data>
-		sZh0x1ULow2yrl29sSUL69GkBMI=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSessionClient.h</key>
-		<data>
-		TFD6sRmTzaOiP6Pv3KJlBVyoIlA=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSessionClientState.h</key>
-		<data>
-		CxMCYN7YZ1mv4UsLwlk6eGO8u/0=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSessionStore.h</key>
-		<data>
-		2wtt9QzX0WTntLEnhj9OfgO954A=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsStringUtils.h</key>
-		<data>
-		AlKfOd8KH+IRj/uPXzKeiBtfF08=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSubmissionTimePolicy.h</key>
-		<data>
-		sOCvnYvSipwPLMpCcFX+5Oy2IeM=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsSystem.h</key>
-		<data>
-		zBoKtMixkQQCUDPqZz3GX0idsOA=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsUniqueIdGenerator.h</key>
-		<data>
-		7NF9fj3JKE0UzIE0Nrk5kCxnUAo=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsUniqueIdService.h</key>
-		<data>
-		NL7Ea1uCbg99N+adV7uAAcqg2Ww=
-		</data>
-		<key>PrivateHeaders/AWSMobileAnalyticsWriter.h</key>
-		<data>
-		uJqFS6YQmhwPuS6+cl26y29VQvM=
-		</data>
-		<key>cognito-identity-2014-06-30.json</key>
-		<data>
-		NA1F7thTufHxcutds/75kETmTOQ=
-		</data>
-		<key>mobileanalytics-2014-06-30.json</key>
-		<data>
-		6lrg+k4f7sLf38io9fYSI1NyjZk=
-		</data>
-		<key>sts-2011-06-15.json</key>
-		<data>
-		zaRybGNTV4JCnVYHBS+8gerb/q0=
+		+eT83265jOezLAm5eXbrU5zt1uQ=
 		</data>
 	</dict>
 	<key>rules</key>

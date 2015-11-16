@@ -41,7 +41,7 @@
 /**
  The default service configuration object. This property can be set only once, and any subsequent setters are ignored.
  */
-@property (nonatomic, strong) AWSServiceConfiguration *defaultServiceConfiguration;
+@property (nonatomic, copy) AWSServiceConfiguration *defaultServiceConfiguration;
 
 /**
  Returns a default singleton object. You should use this singleton method instead of creating an instance of the service manager.
@@ -66,9 +66,16 @@
 @property (nonatomic, assign, readonly) AWSRegionType regionType;
 @property (nonatomic, strong, readonly) id<AWSCredentialsProvider> credentialsProvider;
 @property (nonatomic, strong, readonly) AWSEndpoint *endpoint;
+@property (nonatomic, readonly) NSString *userAgent;
+
++ (NSString *)baseUserAgent;
+
++ (void)addGlobalUserAgentProductToken:(NSString *)productToken;
 
 - (instancetype)initWithRegion:(AWSRegionType)regionType
            credentialsProvider:(id<AWSCredentialsProvider>)credentialsProvider;
+
+- (void)addUserAgentProductToken:(NSString *)productToken;
 
 + (instancetype)configurationWithRegion:(AWSRegionType)regionType
                     credentialsProvider:(id<AWSCredentialsProvider>)credentialsProvider __attribute__ ((deprecated("Use '- initWithRegion:credentialsProvider:' instead.")));
@@ -90,5 +97,9 @@
 - (instancetype)initWithRegion:(AWSRegionType)regionType
                        service:(AWSServiceType)serviceType
                   useUnsafeURL:(BOOL)useUnsafeURL;
+
+- (instancetype)initWithRegion:(AWSRegionType)regionType
+                       service:(AWSServiceType)serviceType
+                           URL:(NSURL *)URL;
 
 @end

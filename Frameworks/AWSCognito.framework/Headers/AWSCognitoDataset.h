@@ -6,7 +6,7 @@
 #import "AWSCognitoHandlers.h"
 
 @class AWSCognitoRecord;
-@class BFTask;
+@class AWSTask;
 
 /**
  An object that encapsulates the dataset metadata.
@@ -110,31 +110,31 @@
  point there is a conflict, conflict resolution is invoked.  No changes are pushed to the service until
  all conflicts are resolved.
  */
-- (BFTask *)synchronize;
+- (AWSTask *)synchronize;
 
 /**
  Attempts to synchronize when device has connectivity.  First it checks connectivity, if device is online
- immediately invokes synchronize and returns the BFTask associated with the attempt.  If the device is offline,
- schedules a synchronize for the next time the device comes online and returns a BFTask with a nil result.
+ immediately invokes synchronize and returns the AWSTask associated with the attempt.  If the device is offline,
+ schedules a synchronize for the next time the device comes online and returns a AWSTask with a nil result.
  The scheduled synchronize is only valid for the lifecycle of the dataset object.  The data will not be synchronized
  if the app is exited before connectivity is regained.  If you want to be notified when events occur during the
  scheduled synchronize, you must add observers of the notifications found in AWSCognito
  */
-- (BFTask *)synchronizeOnConnectivity;
+- (AWSTask *)synchronizeOnConnectivity;
 
 /**
  Subscribes this dataset to push notifications
  
- @return BFTask with nil result. task.error will contain any errors.
+ @return AWSTask with nil result. task.error will contain any errors.
  */
-- (BFTask *)subscribe;
+- (AWSTask *)subscribe;
 
 /**
  Unsubscribes this dataset to push notifications
  
- @return BFTask with nil result. task.error will contain any errors.
+ @return AWSTask with nil result. task.error will contain any errors.
  */
-- (BFTask *)unsubscribe;
+- (AWSTask *)unsubscribe;
 
 
 /**

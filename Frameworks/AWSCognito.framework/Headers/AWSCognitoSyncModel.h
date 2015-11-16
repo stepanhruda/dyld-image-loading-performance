@@ -1,5 +1,16 @@
-/**
- Copyright 2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+/*
+ Copyright 2010-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+ Licensed under the Apache License, Version 2.0 (the "License").
+ You may not use this file except in compliance with the License.
+ A copy of the License is located at
+
+ http://aws.amazon.com/apache2.0
+
+ or in the "license" file accompanying this file. This file is distributed
+ on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ express or implied. See the License for the specific language governing
+ permissions and limitations under the License.
  */
 
 #import <Foundation/Foundation.h>
@@ -97,7 +108,7 @@ typedef NS_ENUM(NSInteger, AWSCognitoSyncStreamingStatus) {
 @class AWSCognitoSyncUpdateRecordsResponse;
 
 /**
- The input for the <code>BulkPublish</code> operation.
+ The input for the BulkPublish operation.
  Required parameters: [IdentityPoolId]
  */
 @interface AWSCognitoSyncBulkPublishRequest : AWSRequest
@@ -130,7 +141,7 @@ typedef NS_ENUM(NSInteger, AWSCognitoSyncStreamingStatus) {
 
 
 /**
- The ARN of the role Amazon Cognito can assume in order to publish to the stream. This role must grant access to Amazon Cognito (cognito-sync) to invoke <code>PutRecord</code> on your Cognito stream.
+ The ARN of the role Amazon Cognito can assume in order to publish to the stream. This role must grant access to Amazon Cognito (cognito-sync) to invoke PutRecord on your Cognito stream.
  */
 @property (nonatomic, strong) NSString *roleArn;
 
@@ -140,7 +151,7 @@ typedef NS_ENUM(NSInteger, AWSCognitoSyncStreamingStatus) {
 @property (nonatomic, strong) NSString *streamName;
 
 /**
- Status of the Cognito streams. Valid values are: <p><code>ENABLED</code> - Streaming of updates to identity pool is enabled.</p><p><code>DISABLED</code>Streaming of updates to identity pool is disabled. Bulk publish will also fail if <code>StreamingStatus</code> is <code>DISABLED</code>.</p>
+ Status of the Cognito streams. Valid values are: <p>ENABLED - Streaming of updates to identity pool is enabled.</p><p>DISABLED - Streaming of updates to identity pool is disabled. Bulk publish will also fail if StreamingStatus is DISABLED.</p>
  */
 @property (nonatomic, assign) AWSCognitoSyncStreamingStatus streamingStatus;
 
@@ -323,7 +334,7 @@ typedef NS_ENUM(NSInteger, AWSCognitoSyncStreamingStatus) {
 @end
 
 /**
- The input for the <code>GetBulkPublishDetails</code> operation.
+ The input for the GetBulkPublishDetails operation.
  Required parameters: [IdentityPoolId]
  */
 @interface AWSCognitoSyncGetBulkPublishDetailsRequest : AWSRequest
@@ -337,13 +348,13 @@ typedef NS_ENUM(NSInteger, AWSCognitoSyncStreamingStatus) {
 @end
 
 /**
- The output for the <code>GetBulkPublishDetails</code> operation.
+ The output for the GetBulkPublishDetails operation.
  */
 @interface AWSCognitoSyncGetBulkPublishDetailsResponse : AWSModel
 
 
 /**
- If <code>BulkPublishStatus</code> is SUCCEEDED, the time the last bulk publish operation completed.
+ If BulkPublishStatus is SUCCEEDED, the time the last bulk publish operation completed.
  */
 @property (nonatomic, strong) NSDate *bulkPublishCompleteTime;
 
@@ -353,7 +364,7 @@ typedef NS_ENUM(NSInteger, AWSCognitoSyncStreamingStatus) {
 @property (nonatomic, strong) NSDate *bulkPublishStartTime;
 
 /**
- Status of the last bulk publish operation, valid values are: <p><code>NOT_STARTED</code> - No bulk publish has been requested for this identity pool</p><p><code>IN_PROGRESS</code> - Data is being published to the configured stream</p><p><code>SUCCEEDED</code> - All data for the identity pool has been published to the configured stream</p><p><code>FAILED</code> - Some portion of the data has failed to publish, check <code>FailureMessage</code> for the cause.</p>
+ Status of the last bulk publish operation, valid values are: <p>NOT_STARTED - No bulk publish has been requested for this identity pool</p><p>IN_PROGRESS - Data is being published to the configured stream</p><p>SUCCEEDED - All data for the identity pool has been published to the configured stream</p><p>FAILED - Some portion of the data has failed to publish, check FailureMessage for the cause.</p>
  */
 @property (nonatomic, assign) AWSCognitoSyncBulkPublishStatus bulkPublishStatus;
 
@@ -370,33 +381,34 @@ typedef NS_ENUM(NSInteger, AWSCognitoSyncStreamingStatus) {
 @end
 
 /**
- 
+ <p>A request for a list of the configured Cognito Events</p>
+ Required parameters: [IdentityPoolId]
  */
 @interface AWSCognitoSyncGetCognitoEventsRequest : AWSRequest
 
 
 /**
- 
+ <p>The Cognito Identity Pool ID for the request</p>
  */
 @property (nonatomic, strong) NSString *identityPoolId;
 
 @end
 
 /**
- 
+ <p>The response from the GetCognitoEvents request</p>
  */
 @interface AWSCognitoSyncGetCognitoEventsResponse : AWSModel
 
 
 /**
- 
+ <p>The Cognito Events returned from the GetCognitoEvents request</p>
  */
 @property (nonatomic, strong) NSDictionary *events;
 
 @end
 
 /**
- <p>The input for the <code>GetIdentityPoolConfiguration</code> operation.</p>
+ <p>The input for the GetIdentityPoolConfiguration operation.</p>
  Required parameters: [IdentityPoolId]
  */
 @interface AWSCognitoSyncGetIdentityPoolConfigurationRequest : AWSRequest
@@ -410,7 +422,7 @@ typedef NS_ENUM(NSInteger, AWSCognitoSyncStreamingStatus) {
 @end
 
 /**
- <p>The output for the <code>GetIdentityPoolConfiguration</code> operation.</p>
+ <p>The output for the GetIdentityPoolConfiguration operation.</p>
  */
 @interface AWSCognitoSyncGetIdentityPoolConfigurationResponse : AWSModel
 
@@ -779,7 +791,7 @@ typedef NS_ENUM(NSInteger, AWSCognitoSyncStreamingStatus) {
 @end
 
 /**
- <p>A request to <code>RegisterDevice</code>.</p>
+ <p>A request to RegisterDevice.</p>
  Required parameters: [IdentityPoolId, IdentityId, Platform, Token]
  */
 @interface AWSCognitoSyncRegisterDeviceRequest : AWSRequest
@@ -808,7 +820,7 @@ typedef NS_ENUM(NSInteger, AWSCognitoSyncStreamingStatus) {
 @end
 
 /**
- <p>Response to a <code>RegisterDevice</code> request.</p>
+ <p>Response to a RegisterDevice request.</p>
  */
 @interface AWSCognitoSyncRegisterDeviceResponse : AWSModel
 
@@ -821,25 +833,26 @@ typedef NS_ENUM(NSInteger, AWSCognitoSyncStreamingStatus) {
 @end
 
 /**
- 
+ <p>A request to configure Cognito Events"</p>"
+ Required parameters: [IdentityPoolId, Events]
  */
 @interface AWSCognitoSyncSetCognitoEventsRequest : AWSRequest
 
 
 /**
- 
+ <p>The events to configure</p>
  */
 @property (nonatomic, strong) NSDictionary *events;
 
 /**
- 
+ <p>The Cognito Identity Pool to use when configuring Cognito Events</p>
  */
 @property (nonatomic, strong) NSString *identityPoolId;
 
 @end
 
 /**
- <p>The input for the <code>SetIdentityPoolConfiguration</code> operation.</p>
+ <p>The input for the SetIdentityPoolConfiguration operation.</p>
  Required parameters: [IdentityPoolId]
  */
 @interface AWSCognitoSyncSetIdentityPoolConfigurationRequest : AWSRequest
@@ -863,7 +876,7 @@ typedef NS_ENUM(NSInteger, AWSCognitoSyncStreamingStatus) {
 @end
 
 /**
- <p>The output for the <code>SetIdentityPoolConfiguration</code> operation</p>
+ <p>The output for the SetIdentityPoolConfiguration operation</p>
  */
 @interface AWSCognitoSyncSetIdentityPoolConfigurationResponse : AWSModel
 
@@ -886,7 +899,7 @@ typedef NS_ENUM(NSInteger, AWSCognitoSyncStreamingStatus) {
 @end
 
 /**
- <p>A request to <code>SubscribeToDatasetRequest</code>.</p>
+ <p>A request to SubscribeToDatasetRequest.</p>
  Required parameters: [IdentityPoolId, IdentityId, DatasetName, DeviceId]
  */
 @interface AWSCognitoSyncSubscribeToDatasetRequest : AWSRequest
@@ -915,7 +928,7 @@ typedef NS_ENUM(NSInteger, AWSCognitoSyncStreamingStatus) {
 @end
 
 /**
- <p>Response to a <code>SubscribeToDataset</code> request.</p>
+ <p>Response to a SubscribeToDataset request.</p>
  */
 @interface AWSCognitoSyncSubscribeToDatasetResponse : AWSModel
 
@@ -923,7 +936,7 @@ typedef NS_ENUM(NSInteger, AWSCognitoSyncStreamingStatus) {
 @end
 
 /**
- <p>A request to <code>UnsubscribeFromDataset</code>.</p>
+ <p>A request to UnsubscribeFromDataset.</p>
  Required parameters: [IdentityPoolId, IdentityId, DatasetName, DeviceId]
  */
 @interface AWSCognitoSyncUnsubscribeFromDatasetRequest : AWSRequest
@@ -952,7 +965,7 @@ typedef NS_ENUM(NSInteger, AWSCognitoSyncStreamingStatus) {
 @end
 
 /**
- <p>Response to an <code>UnsubscribeFromDataset</code> request.</p>
+ <p>Response to an UnsubscribeFromDataset request.</p>
  */
 @interface AWSCognitoSyncUnsubscribeFromDatasetResponse : AWSModel
 
@@ -967,7 +980,7 @@ typedef NS_ENUM(NSInteger, AWSCognitoSyncStreamingStatus) {
 
 
 /**
- Intended to supply a device ID that will populate the <code>lastModifiedBy</code> field referenced in other methods. The <code>ClientContext</code> field is not yet implemented.
+ Intended to supply a device ID that will populate the lastModifiedBy field referenced in other methods. The ClientContext field is not yet implemented.
  */
 @property (nonatomic, strong) NSString *clientContext;
 

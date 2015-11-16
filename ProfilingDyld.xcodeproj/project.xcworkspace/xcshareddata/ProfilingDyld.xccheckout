@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F060C656-A2BC-43C5-BC63-AB1470FB41ED</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ProfilingDyld</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FC8543A0461EC6568C8FD45FCBD0F640FE0049FE</key>
+		<string>github.com:stepanhruda/dyld-image-loading-performance.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ProfilingDyld.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FC8543A0461EC6568C8FD45FCBD0F640FE0049FE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:stepanhruda/dyld-image-loading-performance.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FC8543A0461EC6568C8FD45FCBD0F640FE0049FE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FC8543A0461EC6568C8FD45FCBD0F640FE0049FE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dyld-image-loading-performance</string>
+		</dict>
+	</array>
+</dict>
+</plist>
