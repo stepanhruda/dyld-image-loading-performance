@@ -9,7 +9,7 @@
 
 @class AWSCognitoDataset;
 @class AWSCognitoCredentialsProvider;
-@class BFTask;
+@class AWSTask;
 
 @interface AWSCognito : AWSService
 
@@ -307,10 +307,10 @@ typedef NS_ENUM(NSInteger, AWSCognitoErrorType) {
 - (NSArray *)listDatasets;
 
 /**
- List all of the datasets.  Returns a BFTask. The result of this task will be an array of 
+ List all of the datasets.  Returns a AWSTask. The result of this task will be an array of 
  AWSCognitoDatasetMetadata objects.
  */
-- (BFTask *)refreshDatasetMetadata;
+- (AWSTask *)refreshDatasetMetadata;
 
 /**
  Wipe all cached data.
@@ -325,10 +325,10 @@ typedef NS_ENUM(NSInteger, AWSCognitoErrorType) {
 /**
  Register this device for push notifications.  You will not receive any notifications until you actually subscribe the
  dataset you want to receive push notifications for.  If your build targets Release, this will register the device
- with APNS, if your build targets Debug this will register the device with APNS_SANDBOX. Returns a BFTask.
+ with APNS, if your build targets Debug this will register the device with APNS_SANDBOX. Returns a AWSTask.
  The result of this task will be a AWSCognitoSyncRegisterDeviceResponse.
  */
-- (BFTask *)registerDevice: (NSData *) deviceToken;
+- (AWSTask *)registerDevice: (NSData *) deviceToken;
 
 /**
  Get the device id Cognito Sync gave this device. nil if device has never been registered
@@ -353,29 +353,29 @@ typedef NS_ENUM(NSInteger, AWSCognitoErrorType) {
 
 /**
  Subscribe to a list of datasets.  Make sure you have called synchronize on each of the datasets in the list
- at least once prior to calling this. Returns a BFTask.  The result of this task will be a NSArray of
+ at least once prior to calling this. Returns a AWSTask.  The result of this task will be a NSArray of
  AWSCognitoSyncSubscribeToDatasetResponse
  */
-- (BFTask *)subscribe:(NSArray *) datasetNames;
+- (AWSTask *)subscribe:(NSArray *) datasetNames;
 
 /**
  Subscribe to all datasets you have locally.  Make sure you have called synchronize on all of your local datasets
- at least once prior to calling this. Returns a BFTask.  The result of this task will be a NSArray of
+ at least once prior to calling this. Returns a AWSTask.  The result of this task will be a NSArray of
  AWSCognitoSyncSubscribeToDatasetResponse
  */
-- (BFTask *)subscribeAll;
+- (AWSTask *)subscribeAll;
 
 /**
- Unsubscribe to a list of datasets. Returns a BFTask.  The result of this task will be a NSArray of
+ Unsubscribe to a list of datasets. Returns a AWSTask.  The result of this task will be a NSArray of
  AWSCognitoSyncUnsubscribeToDatasetResponse
  */
-- (BFTask *)unsubscribe:(NSArray *) datasetNames;
+- (AWSTask *)unsubscribe:(NSArray *) datasetNames;
 
 /**
  Unsubscribe to all datasets you have locally.  Make sure you have called synchronize on all of your local datasets
- at least once prior to calling this. Returns a BFTask.  The result of this task will be a NSArray of
+ at least once prior to calling this. Returns a AWSTask.  The result of this task will be a NSArray of
  AWSCognitoSyncUnsubscribeToDatasetResponse
  */
-- (BFTask *)unsubscribeAll;
+- (AWSTask *)unsubscribeAll;
 
 @end

@@ -7,6 +7,7 @@
 #import "AWSCognitoRecord.h"
 #import "AWSCognitoService.h"
 #import "AWSCognitoSyncModel.h"
+#import "AWSCognitoSyncResources.h"
 #import "AWSCognitoSyncService.h"
 
 FOUNDATION_EXPORT double AWSCognitoVersionNumber;

@@ -28,10 +28,12 @@ typedef NS_ENUM(NSInteger, AWSRegionType) {
     AWSRegionAPSoutheast2,
     AWSRegionSAEast1,
     AWSRegionCNNorth1,
+    AWSRegionUSGovWest1,
 };
 
 typedef NS_ENUM(NSInteger, AWSServiceType) {
     AWSServiceUnknown,
+    AWSServiceAPIGateway,
     AWSServiceAutoScaling,
     AWSServiceCloudWatch,
     AWSServiceCognitoIdentityBroker,

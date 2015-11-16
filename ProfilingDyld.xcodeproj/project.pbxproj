@@ -13,55 +13,68 @@
 		C00CA6041BBAFD1D00B8F505 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C00CA6031BBAFD1D00B8F505 /* Images.xcassets */; };
 		C00CA6071BBAFD1D00B8F505 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C00CA6051BBAFD1D00B8F505 /* LaunchScreen.xib */; };
 		C00CA6131BBAFD1D00B8F505 /* ProfilingDyldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00CA6121BBAFD1D00B8F505 /* ProfilingDyldTests.swift */; };
-		C00CA6E61BBAFFA300B8F505 /* AFNetworking.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6401BBAFF0500B8F505 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6E71BBAFFA300B8F505 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6411BBAFF0500B8F505 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6E81BBAFFA300B8F505 /* Aspects.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6421BBAFF0500B8F505 /* Aspects.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6E91BBAFFA300B8F505 /* AWSAutoScaling.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6431BBAFF0500B8F505 /* AWSAutoScaling.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6EA1BBAFFA300B8F505 /* AWSCloudWatch.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6441BBAFF0500B8F505 /* AWSCloudWatch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6EB1BBAFFA300B8F505 /* AWSCognito.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6451BBAFF0500B8F505 /* AWSCognito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6EC1BBAFFA300B8F505 /* AWSCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6461BBAFF0500B8F505 /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6ED1BBAFFA300B8F505 /* AWSDynamoDB.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6471BBAFF0500B8F505 /* AWSDynamoDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6EE1BBAFFA300B8F505 /* AWSEC2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6481BBAFF0500B8F505 /* AWSEC2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6EF1BBAFFA300B8F505 /* AWSElasticLoadBalancing.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6491BBAFF0500B8F505 /* AWSElasticLoadBalancing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6F01BBAFFA300B8F505 /* AWSKinesis.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA64A1BBAFF0500B8F505 /* AWSKinesis.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6F11BBAFFA300B8F505 /* AWSS3.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA64B1BBAFF0500B8F505 /* AWSS3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6F21BBAFFA300B8F505 /* AWSSES.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA64C1BBAFF0500B8F505 /* AWSSES.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6F31BBAFFA300B8F505 /* AWSSimpleDB.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA64D1BBAFF0500B8F505 /* AWSSimpleDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6F41BBAFFA300B8F505 /* AWSSNS.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA64E1BBAFF0500B8F505 /* AWSSNS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6F51BBAFFA300B8F505 /* AWSSQS.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA64F1BBAFF0500B8F505 /* AWSSQS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6F61BBAFFA300B8F505 /* BlocksKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6501BBAFF0500B8F505 /* BlocksKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6F71BBAFFA300B8F505 /* Bolts.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6511BBAFF0500B8F505 /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6F81BBAFFA300B8F505 /* CocoaAsyncSocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6521BBAFF0500B8F505 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6F91BBAFFA300B8F505 /* CocoaLumberjack.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6531BBAFF0500B8F505 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6FA1BBAFFA300B8F505 /* FLEX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6541BBAFF0500B8F505 /* FLEX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6FB1BBAFFA300B8F505 /* FMDB.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6551BBAFF0500B8F505 /* FMDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6FC1BBAFFA300B8F505 /* FXBlurView.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6561BBAFF0500B8F505 /* FXBlurView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6FD1BBAFFA300B8F505 /* GBDeviceInfo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6571BBAFF0500B8F505 /* GBDeviceInfo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6FE1BBAFFA300B8F505 /* GZIP.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6581BBAFF0500B8F505 /* GZIP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA6FF1BBAFFA300B8F505 /* HexColors.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6591BBAFF0500B8F505 /* HexColors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA7001BBAFFA300B8F505 /* JSQSystemSoundPlayer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA65A1BBAFF0500B8F505 /* JSQSystemSoundPlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA7011BBAFFA300B8F505 /* MagicalRecord.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA65B1BBAFF0500B8F505 /* MagicalRecord.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA7021BBAFFA300B8F505 /* Mantle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA65C1BBAFF0500B8F505 /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA7031BBAFFA300B8F505 /* MAObjCRuntime.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA65D1BBAFF0500B8F505 /* MAObjCRuntime.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA7041BBAFFA300B8F505 /* Masonry.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA65E1BBAFF0500B8F505 /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA7061BBAFFA300B8F505 /* Mixpanel.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6601BBAFF0500B8F505 /* Mixpanel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA7071BBAFFA300B8F505 /* Moya.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6611BBAFF0500B8F505 /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA7081BBAFFA300B8F505 /* NJKWebViewProgress.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6621BBAFF0500B8F505 /* NJKWebViewProgress.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA7091BBAFFA300B8F505 /* NPReachability.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6631BBAFF0500B8F505 /* NPReachability.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA70A1BBAFFA300B8F505 /* ObjectiveSugar.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6641BBAFF0500B8F505 /* ObjectiveSugar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA70C1BBAFFA300B8F505 /* Reachability.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6661BBAFF0500B8F505 /* Reachability.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA70D1BBAFFA300B8F505 /* SAMCategories.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6671BBAFF0500B8F505 /* SAMCategories.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA70E1BBAFFA300B8F505 /* Shimmer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6681BBAFF0500B8F505 /* Shimmer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA7121BBAFFA300B8F505 /* SMXMLDocument.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA66C1BBAFF0500B8F505 /* SMXMLDocument.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA7141BBAFFA300B8F505 /* SSKeychain.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA66E1BBAFF0500B8F505 /* SSKeychain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA7151BBAFFA300B8F505 /* STPTransitions.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA66F1BBAFF0500B8F505 /* STPTransitions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA7161BBAFFA400B8F505 /* TMCache.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6701BBAFF0500B8F505 /* TMCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA7171BBAFFA400B8F505 /* TOMSMorphingLabel.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6711BBAFF0500B8F505 /* TOMSMorphingLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA7181BBAFFA400B8F505 /* UICKeyChainStore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6721BBAFF0500B8F505 /* UICKeyChainStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA7191BBAFFA400B8F505 /* UIImage_PDF.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6731BBAFF0500B8F505 /* UIImage_PDF.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA71A1BBAFFA400B8F505 /* XMLDictionary.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6741BBAFF0500B8F505 /* XMLDictionary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA71B1BBAFFA400B8F505 /* YapDatabase.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6751BBAFF0500B8F505 /* YapDatabase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C00CA71C1BBAFFA400B8F505 /* zipzap.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C00CA6761BBAFF0500B8F505 /* zipzap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8511BFA8B020084EFFA /* zipzap.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B84E1BFA89F90084EFFA /* zipzap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8911BFA8B250084EFFA /* Aspects.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8521BFA8B1D0084EFFA /* Aspects.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8931BFA8B250084EFFA /* AWSCognito.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8531BFA8B1D0084EFFA /* AWSCognito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8951BFA8B250084EFFA /* AWSCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8541BFA8B1D0084EFFA /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8971BFA8B250084EFFA /* AWSMobileAnalytics.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8551BFA8B1D0084EFFA /* AWSMobileAnalytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8991BFA8B250084EFFA /* BlocksKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8561BFA8B1D0084EFFA /* BlocksKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B89B1BFA8B250084EFFA /* Bolts.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8571BFA8B1D0084EFFA /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B89D1BFA8B250084EFFA /* CocoaAsyncSocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8581BFA8B1D0084EFFA /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B89F1BFA8B250084EFFA /* CocoaLumberjack.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8591BFA8B1D0084EFFA /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8A11BFA8B250084EFFA /* FLEX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B85A1BFA8B1D0084EFFA /* FLEX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8A31BFA8B250084EFFA /* FXBlurView.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B85B1BFA8B1D0084EFFA /* FXBlurView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8A51BFA8B250084EFFA /* GBDeviceInfo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B85C1BFA8B1D0084EFFA /* GBDeviceInfo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8A71BFA8B250084EFFA /* HexColors.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B85D1BFA8B1D0084EFFA /* HexColors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8A91BFA8B250084EFFA /* JSQSystemSoundPlayer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B85E1BFA8B1D0084EFFA /* JSQSystemSoundPlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8AB1BFA8B250084EFFA /* MAObjCRuntime.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B85F1BFA8B1D0084EFFA /* MAObjCRuntime.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8AD1BFA8B250084EFFA /* Masonry.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8601BFA8B1D0084EFFA /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8AF1BFA8B250084EFFA /* Mixpanel.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8611BFA8B1D0084EFFA /* Mixpanel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8B31BFA8B250084EFFA /* NJKWebViewProgress.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8631BFA8B1D0084EFFA /* NJKWebViewProgress.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8B51BFA8B250084EFFA /* NPReachability.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8641BFA8B1D0084EFFA /* NPReachability.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8B71BFA8B250084EFFA /* ObjectiveSugar.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8651BFA8B1D0084EFFA /* ObjectiveSugar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8B91BFA8B250084EFFA /* Ono.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8661BFA8B1D0084EFFA /* Ono.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8BB1BFA8B250084EFFA /* Reachability.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8671BFA8B1D0084EFFA /* Reachability.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8BD1BFA8B250084EFFA /* SAMCategories.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8681BFA8B1D0084EFFA /* SAMCategories.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8BF1BFA8B250084EFFA /* Shimmer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8691BFA8B1D0084EFFA /* Shimmer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8C11BFA8B250084EFFA /* SMXMLDocument.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B86A1BFA8B1D0084EFFA /* SMXMLDocument.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8C31BFA8B250084EFFA /* SSKeychain.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B86B1BFA8B1D0084EFFA /* SSKeychain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8C51BFA8B250084EFFA /* STPTransitions.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B86C1BFA8B1D0084EFFA /* STPTransitions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8C71BFA8B250084EFFA /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B86D1BFA8B1D0084EFFA /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8C91BFA8B250084EFFA /* TOMSMorphingLabel.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B86E1BFA8B1D0084EFFA /* TOMSMorphingLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8CB1BFA8B250084EFFA /* UIImage_PDF.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B86F1BFA8B1D0084EFFA /* UIImage_PDF.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8CD1BFA8B250084EFFA /* YapDatabase.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0A7B8701BFA8B1D0084EFFA /* YapDatabase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0A7B8CE1BFA8B350084EFFA /* Aspects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8521BFA8B1D0084EFFA /* Aspects.framework */; };
+		C0A7B8CF1BFA8B350084EFFA /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8531BFA8B1D0084EFFA /* AWSCognito.framework */; };
+		C0A7B8D01BFA8B350084EFFA /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8541BFA8B1D0084EFFA /* AWSCore.framework */; };
+		C0A7B8D11BFA8B350084EFFA /* AWSMobileAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8551BFA8B1D0084EFFA /* AWSMobileAnalytics.framework */; };
+		C0A7B8D21BFA8B350084EFFA /* BlocksKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8561BFA8B1D0084EFFA /* BlocksKit.framework */; };
+		C0A7B8D31BFA8B350084EFFA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8571BFA8B1D0084EFFA /* Bolts.framework */; };
+		C0A7B8D41BFA8B350084EFFA /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8581BFA8B1D0084EFFA /* CocoaAsyncSocket.framework */; };
+		C0A7B8D51BFA8B350084EFFA /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8591BFA8B1D0084EFFA /* CocoaLumberjack.framework */; };
+		C0A7B8D61BFA8B350084EFFA /* FLEX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B85A1BFA8B1D0084EFFA /* FLEX.framework */; };
+		C0A7B8D71BFA8B350084EFFA /* FXBlurView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B85B1BFA8B1D0084EFFA /* FXBlurView.framework */; };
+		C0A7B8D81BFA8B350084EFFA /* GBDeviceInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B85C1BFA8B1D0084EFFA /* GBDeviceInfo.framework */; };
+		C0A7B8D91BFA8B350084EFFA /* HexColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B85D1BFA8B1D0084EFFA /* HexColors.framework */; };
+		C0A7B8DA1BFA8B350084EFFA /* JSQSystemSoundPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B85E1BFA8B1D0084EFFA /* JSQSystemSoundPlayer.framework */; };
+		C0A7B8DB1BFA8B350084EFFA /* MAObjCRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B85F1BFA8B1D0084EFFA /* MAObjCRuntime.framework */; };
+		C0A7B8DC1BFA8B350084EFFA /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8601BFA8B1D0084EFFA /* Masonry.framework */; };
+		C0A7B8DD1BFA8B350084EFFA /* Mixpanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8611BFA8B1D0084EFFA /* Mixpanel.framework */; };
+		C0A7B8DF1BFA8B350084EFFA /* NJKWebViewProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8631BFA8B1D0084EFFA /* NJKWebViewProgress.framework */; };
+		C0A7B8E01BFA8B350084EFFA /* NPReachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8641BFA8B1D0084EFFA /* NPReachability.framework */; };
+		C0A7B8E11BFA8B350084EFFA /* ObjectiveSugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8651BFA8B1D0084EFFA /* ObjectiveSugar.framework */; };
+		C0A7B8E21BFA8B350084EFFA /* Ono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8661BFA8B1D0084EFFA /* Ono.framework */; };
+		C0A7B8E31BFA8B350084EFFA /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8671BFA8B1D0084EFFA /* Reachability.framework */; };
+		C0A7B8E41BFA8B350084EFFA /* SAMCategories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8681BFA8B1D0084EFFA /* SAMCategories.framework */; };
+		C0A7B8E51BFA8B350084EFFA /* Shimmer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8691BFA8B1D0084EFFA /* Shimmer.framework */; };
+		C0A7B8E61BFA8B350084EFFA /* SMXMLDocument.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B86A1BFA8B1D0084EFFA /* SMXMLDocument.framework */; };
+		C0A7B8E71BFA8B350084EFFA /* SSKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B86B1BFA8B1D0084EFFA /* SSKeychain.framework */; };
+		C0A7B8E81BFA8B350084EFFA /* STPTransitions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B86C1BFA8B1D0084EFFA /* STPTransitions.framework */; };
+		C0A7B8E91BFA8B350084EFFA /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B86D1BFA8B1D0084EFFA /* SwiftyJSON.framework */; };
+		C0A7B8EA1BFA8B350084EFFA /* TOMSMorphingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B86E1BFA8B1D0084EFFA /* TOMSMorphingLabel.framework */; };
+		C0A7B8EB1BFA8B350084EFFA /* UIImage_PDF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B86F1BFA8B1D0084EFFA /* UIImage_PDF.framework */; };
+		C0A7B8EC1BFA8B350084EFFA /* YapDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B8701BFA8B1D0084EFFA /* YapDatabase.framework */; };
+		C0A7B8ED1BFA8B350084EFFA /* zipzap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7B84E1BFA89F90084EFFA /* zipzap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,55 +94,37 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C00CA6E61BBAFFA300B8F505 /* AFNetworking.framework in CopyFiles */,
-				C00CA6E71BBAFFA300B8F505 /* Alamofire.framework in CopyFiles */,
-				C00CA6E81BBAFFA300B8F505 /* Aspects.framework in CopyFiles */,
-				C00CA6E91BBAFFA300B8F505 /* AWSAutoScaling.framework in CopyFiles */,
-				C00CA6EA1BBAFFA300B8F505 /* AWSCloudWatch.framework in CopyFiles */,
-				C00CA6EB1BBAFFA300B8F505 /* AWSCognito.framework in CopyFiles */,
-				C00CA6EC1BBAFFA300B8F505 /* AWSCore.framework in CopyFiles */,
-				C00CA6ED1BBAFFA300B8F505 /* AWSDynamoDB.framework in CopyFiles */,
-				C00CA6EE1BBAFFA300B8F505 /* AWSEC2.framework in CopyFiles */,
-				C00CA6EF1BBAFFA300B8F505 /* AWSElasticLoadBalancing.framework in CopyFiles */,
-				C00CA6F01BBAFFA300B8F505 /* AWSKinesis.framework in CopyFiles */,
-				C00CA6F11BBAFFA300B8F505 /* AWSS3.framework in CopyFiles */,
-				C00CA6F21BBAFFA300B8F505 /* AWSSES.framework in CopyFiles */,
-				C00CA6F31BBAFFA300B8F505 /* AWSSimpleDB.framework in CopyFiles */,
-				C00CA6F41BBAFFA300B8F505 /* AWSSNS.framework in CopyFiles */,
-				C00CA6F51BBAFFA300B8F505 /* AWSSQS.framework in CopyFiles */,
-				C00CA6F61BBAFFA300B8F505 /* BlocksKit.framework in CopyFiles */,
-				C00CA6F71BBAFFA300B8F505 /* Bolts.framework in CopyFiles */,
-				C00CA6F81BBAFFA300B8F505 /* CocoaAsyncSocket.framework in CopyFiles */,
-				C00CA6F91BBAFFA300B8F505 /* CocoaLumberjack.framework in CopyFiles */,
-				C00CA6FA1BBAFFA300B8F505 /* FLEX.framework in CopyFiles */,
-				C00CA6FB1BBAFFA300B8F505 /* FMDB.framework in CopyFiles */,
-				C00CA6FC1BBAFFA300B8F505 /* FXBlurView.framework in CopyFiles */,
-				C00CA6FD1BBAFFA300B8F505 /* GBDeviceInfo.framework in CopyFiles */,
-				C00CA6FE1BBAFFA300B8F505 /* GZIP.framework in CopyFiles */,
-				C00CA6FF1BBAFFA300B8F505 /* HexColors.framework in CopyFiles */,
-				C00CA7001BBAFFA300B8F505 /* JSQSystemSoundPlayer.framework in CopyFiles */,
-				C00CA7011BBAFFA300B8F505 /* MagicalRecord.framework in CopyFiles */,
-				C00CA7021BBAFFA300B8F505 /* Mantle.framework in CopyFiles */,
-				C00CA7031BBAFFA300B8F505 /* MAObjCRuntime.framework in CopyFiles */,
-				C00CA7041BBAFFA300B8F505 /* Masonry.framework in CopyFiles */,
-				C00CA7061BBAFFA300B8F505 /* Mixpanel.framework in CopyFiles */,
-				C00CA7071BBAFFA300B8F505 /* Moya.framework in CopyFiles */,
-				C00CA7081BBAFFA300B8F505 /* NJKWebViewProgress.framework in CopyFiles */,
-				C00CA7091BBAFFA300B8F505 /* NPReachability.framework in CopyFiles */,
-				C00CA70A1BBAFFA300B8F505 /* ObjectiveSugar.framework in CopyFiles */,
-				C00CA70C1BBAFFA300B8F505 /* Reachability.framework in CopyFiles */,
-				C00CA70D1BBAFFA300B8F505 /* SAMCategories.framework in CopyFiles */,
-				C00CA70E1BBAFFA300B8F505 /* Shimmer.framework in CopyFiles */,
-				C00CA7121BBAFFA300B8F505 /* SMXMLDocument.framework in CopyFiles */,
-				C00CA7141BBAFFA300B8F505 /* SSKeychain.framework in CopyFiles */,
-				C00CA7151BBAFFA300B8F505 /* STPTransitions.framework in CopyFiles */,
-				C00CA7161BBAFFA400B8F505 /* TMCache.framework in CopyFiles */,
-				C00CA7171BBAFFA400B8F505 /* TOMSMorphingLabel.framework in CopyFiles */,
-				C00CA7181BBAFFA400B8F505 /* UICKeyChainStore.framework in CopyFiles */,
-				C00CA7191BBAFFA400B8F505 /* UIImage_PDF.framework in CopyFiles */,
-				C00CA71A1BBAFFA400B8F505 /* XMLDictionary.framework in CopyFiles */,
-				C00CA71B1BBAFFA400B8F505 /* YapDatabase.framework in CopyFiles */,
-				C00CA71C1BBAFFA400B8F505 /* zipzap.framework in CopyFiles */,
+				C0A7B8AF1BFA8B250084EFFA /* Mixpanel.framework in CopyFiles */,
+				C0A7B8AB1BFA8B250084EFFA /* MAObjCRuntime.framework in CopyFiles */,
+				C0A7B8931BFA8B250084EFFA /* AWSCognito.framework in CopyFiles */,
+				C0A7B8A91BFA8B250084EFFA /* JSQSystemSoundPlayer.framework in CopyFiles */,
+				C0A7B89F1BFA8B250084EFFA /* CocoaLumberjack.framework in CopyFiles */,
+				C0A7B8B31BFA8B250084EFFA /* NJKWebViewProgress.framework in CopyFiles */,
+				C0A7B8C71BFA8B250084EFFA /* SwiftyJSON.framework in CopyFiles */,
+				C0A7B8991BFA8B250084EFFA /* BlocksKit.framework in CopyFiles */,
+				C0A7B8C11BFA8B250084EFFA /* SMXMLDocument.framework in CopyFiles */,
+				C0A7B8A71BFA8B250084EFFA /* HexColors.framework in CopyFiles */,
+				C0A7B8AD1BFA8B250084EFFA /* Masonry.framework in CopyFiles */,
+				C0A7B89D1BFA8B250084EFFA /* CocoaAsyncSocket.framework in CopyFiles */,
+				C0A7B8951BFA8B250084EFFA /* AWSCore.framework in CopyFiles */,
+				C0A7B8A31BFA8B250084EFFA /* FXBlurView.framework in CopyFiles */,
+				C0A7B8C51BFA8B250084EFFA /* STPTransitions.framework in CopyFiles */,
+				C0A7B8911BFA8B250084EFFA /* Aspects.framework in CopyFiles */,
+				C0A7B8CD1BFA8B250084EFFA /* YapDatabase.framework in CopyFiles */,
+				C0A7B8BF1BFA8B250084EFFA /* Shimmer.framework in CopyFiles */,
+				C0A7B8511BFA8B020084EFFA /* zipzap.framework in CopyFiles */,
+				C0A7B8C31BFA8B250084EFFA /* SSKeychain.framework in CopyFiles */,
+				C0A7B8971BFA8B250084EFFA /* AWSMobileAnalytics.framework in CopyFiles */,
+				C0A7B8B71BFA8B250084EFFA /* ObjectiveSugar.framework in CopyFiles */,
+				C0A7B8B51BFA8B250084EFFA /* NPReachability.framework in CopyFiles */,
+				C0A7B8B91BFA8B250084EFFA /* Ono.framework in CopyFiles */,
+				C0A7B8BD1BFA8B250084EFFA /* SAMCategories.framework in CopyFiles */,
+				C0A7B8BB1BFA8B250084EFFA /* Reachability.framework in CopyFiles */,
+				C0A7B89B1BFA8B250084EFFA /* Bolts.framework in CopyFiles */,
+				C0A7B8A11BFA8B250084EFFA /* FLEX.framework in CopyFiles */,
+				C0A7B8CB1BFA8B250084EFFA /* UIImage_PDF.framework in CopyFiles */,
+				C0A7B8C91BFA8B250084EFFA /* TOMSMorphingLabel.framework in CopyFiles */,
+				C0A7B8A51BFA8B250084EFFA /* GBDeviceInfo.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,55 +141,37 @@
 		C00CA60C1BBAFD1D00B8F505 /* ProfilingDyldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfilingDyldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00CA6111BBAFD1D00B8F505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C00CA6121BBAFD1D00B8F505 /* ProfilingDyldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilingDyldTests.swift; sourceTree = "<group>"; };
-		C00CA6401BBAFF0500B8F505 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = "<group>"; };
-		C00CA6411BBAFF0500B8F505 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
-		C00CA6421BBAFF0500B8F505 /* Aspects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Aspects.framework; sourceTree = "<group>"; };
-		C00CA6431BBAFF0500B8F505 /* AWSAutoScaling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSAutoScaling.framework; sourceTree = "<group>"; };
-		C00CA6441BBAFF0500B8F505 /* AWSCloudWatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCloudWatch.framework; sourceTree = "<group>"; };
-		C00CA6451BBAFF0500B8F505 /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognito.framework; sourceTree = "<group>"; };
-		C00CA6461BBAFF0500B8F505 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCore.framework; sourceTree = "<group>"; };
-		C00CA6471BBAFF0500B8F505 /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSDynamoDB.framework; sourceTree = "<group>"; };
-		C00CA6481BBAFF0500B8F505 /* AWSEC2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSEC2.framework; sourceTree = "<group>"; };
-		C00CA6491BBAFF0500B8F505 /* AWSElasticLoadBalancing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSElasticLoadBalancing.framework; sourceTree = "<group>"; };
-		C00CA64A1BBAFF0500B8F505 /* AWSKinesis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSKinesis.framework; sourceTree = "<group>"; };
-		C00CA64B1BBAFF0500B8F505 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSS3.framework; sourceTree = "<group>"; };
-		C00CA64C1BBAFF0500B8F505 /* AWSSES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSES.framework; sourceTree = "<group>"; };
-		C00CA64D1BBAFF0500B8F505 /* AWSSimpleDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSimpleDB.framework; sourceTree = "<group>"; };
-		C00CA64E1BBAFF0500B8F505 /* AWSSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSNS.framework; sourceTree = "<group>"; };
-		C00CA64F1BBAFF0500B8F505 /* AWSSQS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSQS.framework; sourceTree = "<group>"; };
-		C00CA6501BBAFF0500B8F505 /* BlocksKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BlocksKit.framework; sourceTree = "<group>"; };
-		C00CA6511BBAFF0500B8F505 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		C00CA6521BBAFF0500B8F505 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaAsyncSocket.framework; sourceTree = "<group>"; };
-		C00CA6531BBAFF0500B8F505 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaLumberjack.framework; sourceTree = "<group>"; };
-		C00CA6541BBAFF0500B8F505 /* FLEX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FLEX.framework; sourceTree = "<group>"; };
-		C00CA6551BBAFF0500B8F505 /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FMDB.framework; sourceTree = "<group>"; };
-		C00CA6561BBAFF0500B8F505 /* FXBlurView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FXBlurView.framework; sourceTree = "<group>"; };
-		C00CA6571BBAFF0500B8F505 /* GBDeviceInfo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GBDeviceInfo.framework; sourceTree = "<group>"; };
-		C00CA6581BBAFF0500B8F505 /* GZIP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GZIP.framework; sourceTree = "<group>"; };
-		C00CA6591BBAFF0500B8F505 /* HexColors.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HexColors.framework; sourceTree = "<group>"; };
-		C00CA65A1BBAFF0500B8F505 /* JSQSystemSoundPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSQSystemSoundPlayer.framework; sourceTree = "<group>"; };
-		C00CA65B1BBAFF0500B8F505 /* MagicalRecord.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MagicalRecord.framework; sourceTree = "<group>"; };
-		C00CA65C1BBAFF0500B8F505 /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mantle.framework; sourceTree = "<group>"; };
-		C00CA65D1BBAFF0500B8F505 /* MAObjCRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAObjCRuntime.framework; sourceTree = "<group>"; };
-		C00CA65E1BBAFF0500B8F505 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Masonry.framework; sourceTree = "<group>"; };
-		C00CA6601BBAFF0500B8F505 /* Mixpanel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mixpanel.framework; sourceTree = "<group>"; };
-		C00CA6611BBAFF0500B8F505 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Moya.framework; sourceTree = "<group>"; };
-		C00CA6621BBAFF0500B8F505 /* NJKWebViewProgress.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NJKWebViewProgress.framework; sourceTree = "<group>"; };
-		C00CA6631BBAFF0500B8F505 /* NPReachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NPReachability.framework; sourceTree = "<group>"; };
-		C00CA6641BBAFF0500B8F505 /* ObjectiveSugar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ObjectiveSugar.framework; sourceTree = "<group>"; };
-		C00CA6661BBAFF0500B8F505 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reachability.framework; sourceTree = "<group>"; };
-		C00CA6671BBAFF0500B8F505 /* SAMCategories.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAMCategories.framework; sourceTree = "<group>"; };
-		C00CA6681BBAFF0500B8F505 /* Shimmer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Shimmer.framework; sourceTree = "<group>"; };
-		C00CA66C1BBAFF0500B8F505 /* SMXMLDocument.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMXMLDocument.framework; sourceTree = "<group>"; };
-		C00CA66E1BBAFF0500B8F505 /* SSKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SSKeychain.framework; sourceTree = "<group>"; };
-		C00CA66F1BBAFF0500B8F505 /* STPTransitions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STPTransitions.framework; sourceTree = "<group>"; };
-		C00CA6701BBAFF0500B8F505 /* TMCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TMCache.framework; sourceTree = "<group>"; };
-		C00CA6711BBAFF0500B8F505 /* TOMSMorphingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TOMSMorphingLabel.framework; sourceTree = "<group>"; };
-		C00CA6721BBAFF0500B8F505 /* UICKeyChainStore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UICKeyChainStore.framework; sourceTree = "<group>"; };
-		C00CA6731BBAFF0500B8F505 /* UIImage_PDF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIImage_PDF.framework; sourceTree = "<group>"; };
-		C00CA6741BBAFF0500B8F505 /* XMLDictionary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XMLDictionary.framework; sourceTree = "<group>"; };
-		C00CA6751BBAFF0500B8F505 /* YapDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YapDatabase.framework; sourceTree = "<group>"; };
-		C00CA6761BBAFF0500B8F505 /* zipzap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = zipzap.framework; sourceTree = "<group>"; };
+		C0A7B84E1BFA89F90084EFFA /* zipzap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = zipzap.framework; sourceTree = "<group>"; };
+		C0A7B8521BFA8B1D0084EFFA /* Aspects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Aspects.framework; sourceTree = "<group>"; };
+		C0A7B8531BFA8B1D0084EFFA /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognito.framework; sourceTree = "<group>"; };
+		C0A7B8541BFA8B1D0084EFFA /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCore.framework; sourceTree = "<group>"; };
+		C0A7B8551BFA8B1D0084EFFA /* AWSMobileAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSMobileAnalytics.framework; sourceTree = "<group>"; };
+		C0A7B8561BFA8B1D0084EFFA /* BlocksKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BlocksKit.framework; sourceTree = "<group>"; };
+		C0A7B8571BFA8B1D0084EFFA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		C0A7B8581BFA8B1D0084EFFA /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		C0A7B8591BFA8B1D0084EFFA /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaLumberjack.framework; sourceTree = "<group>"; };
+		C0A7B85A1BFA8B1D0084EFFA /* FLEX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FLEX.framework; sourceTree = "<group>"; };
+		C0A7B85B1BFA8B1D0084EFFA /* FXBlurView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FXBlurView.framework; sourceTree = "<group>"; };
+		C0A7B85C1BFA8B1D0084EFFA /* GBDeviceInfo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GBDeviceInfo.framework; sourceTree = "<group>"; };
+		C0A7B85D1BFA8B1D0084EFFA /* HexColors.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HexColors.framework; sourceTree = "<group>"; };
+		C0A7B85E1BFA8B1D0084EFFA /* JSQSystemSoundPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSQSystemSoundPlayer.framework; sourceTree = "<group>"; };
+		C0A7B85F1BFA8B1D0084EFFA /* MAObjCRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAObjCRuntime.framework; sourceTree = "<group>"; };
+		C0A7B8601BFA8B1D0084EFFA /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Masonry.framework; sourceTree = "<group>"; };
+		C0A7B8611BFA8B1D0084EFFA /* Mixpanel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mixpanel.framework; sourceTree = "<group>"; };
+		C0A7B8631BFA8B1D0084EFFA /* NJKWebViewProgress.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NJKWebViewProgress.framework; sourceTree = "<group>"; };
+		C0A7B8641BFA8B1D0084EFFA /* NPReachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NPReachability.framework; sourceTree = "<group>"; };
+		C0A7B8651BFA8B1D0084EFFA /* ObjectiveSugar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ObjectiveSugar.framework; sourceTree = "<group>"; };
+		C0A7B8661BFA8B1D0084EFFA /* Ono.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ono.framework; sourceTree = "<group>"; };
+		C0A7B8671BFA8B1D0084EFFA /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reachability.framework; sourceTree = "<group>"; };
+		C0A7B8681BFA8B1D0084EFFA /* SAMCategories.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAMCategories.framework; sourceTree = "<group>"; };
+		C0A7B8691BFA8B1D0084EFFA /* Shimmer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Shimmer.framework; sourceTree = "<group>"; };
+		C0A7B86A1BFA8B1D0084EFFA /* SMXMLDocument.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMXMLDocument.framework; sourceTree = "<group>"; };
+		C0A7B86B1BFA8B1D0084EFFA /* SSKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SSKeychain.framework; sourceTree = "<group>"; };
+		C0A7B86C1BFA8B1D0084EFFA /* STPTransitions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = STPTransitions.framework; sourceTree = "<group>"; };
+		C0A7B86D1BFA8B1D0084EFFA /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
+		C0A7B86E1BFA8B1D0084EFFA /* TOMSMorphingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TOMSMorphingLabel.framework; sourceTree = "<group>"; };
+		C0A7B86F1BFA8B1D0084EFFA /* UIImage_PDF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIImage_PDF.framework; sourceTree = "<group>"; };
+		C0A7B8701BFA8B1D0084EFFA /* YapDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YapDatabase.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +179,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0A7B8CE1BFA8B350084EFFA /* Aspects.framework in Frameworks */,
+				C0A7B8CF1BFA8B350084EFFA /* AWSCognito.framework in Frameworks */,
+				C0A7B8D01BFA8B350084EFFA /* AWSCore.framework in Frameworks */,
+				C0A7B8D11BFA8B350084EFFA /* AWSMobileAnalytics.framework in Frameworks */,
+				C0A7B8D21BFA8B350084EFFA /* BlocksKit.framework in Frameworks */,
+				C0A7B8D31BFA8B350084EFFA /* Bolts.framework in Frameworks */,
+				C0A7B8D41BFA8B350084EFFA /* CocoaAsyncSocket.framework in Frameworks */,
+				C0A7B8D51BFA8B350084EFFA /* CocoaLumberjack.framework in Frameworks */,
+				C0A7B8D61BFA8B350084EFFA /* FLEX.framework in Frameworks */,
+				C0A7B8D71BFA8B350084EFFA /* FXBlurView.framework in Frameworks */,
+				C0A7B8D81BFA8B350084EFFA /* GBDeviceInfo.framework in Frameworks */,
+				C0A7B8D91BFA8B350084EFFA /* HexColors.framework in Frameworks */,
+				C0A7B8DA1BFA8B350084EFFA /* JSQSystemSoundPlayer.framework in Frameworks */,
+				C0A7B8DB1BFA8B350084EFFA /* MAObjCRuntime.framework in Frameworks */,
+				C0A7B8DC1BFA8B350084EFFA /* Masonry.framework in Frameworks */,
+				C0A7B8DD1BFA8B350084EFFA /* Mixpanel.framework in Frameworks */,
+				C0A7B8DF1BFA8B350084EFFA /* NJKWebViewProgress.framework in Frameworks */,
+				C0A7B8E01BFA8B350084EFFA /* NPReachability.framework in Frameworks */,
+				C0A7B8E11BFA8B350084EFFA /* ObjectiveSugar.framework in Frameworks */,
+				C0A7B8E21BFA8B350084EFFA /* Ono.framework in Frameworks */,
+				C0A7B8E31BFA8B350084EFFA /* Reachability.framework in Frameworks */,
+				C0A7B8E41BFA8B350084EFFA /* SAMCategories.framework in Frameworks */,
+				C0A7B8E51BFA8B350084EFFA /* Shimmer.framework in Frameworks */,
+				C0A7B8E61BFA8B350084EFFA /* SMXMLDocument.framework in Frameworks */,
+				C0A7B8E71BFA8B350084EFFA /* SSKeychain.framework in Frameworks */,
+				C0A7B8E81BFA8B350084EFFA /* STPTransitions.framework in Frameworks */,
+				C0A7B8E91BFA8B350084EFFA /* SwiftyJSON.framework in Frameworks */,
+				C0A7B8EA1BFA8B350084EFFA /* TOMSMorphingLabel.framework in Frameworks */,
+				C0A7B8EB1BFA8B350084EFFA /* UIImage_PDF.framework in Frameworks */,
+				C0A7B8EC1BFA8B350084EFFA /* YapDatabase.framework in Frameworks */,
+				C0A7B8ED1BFA8B350084EFFA /* zipzap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,55 +283,37 @@
 		C00CA63F1BBAFF0500B8F505 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C00CA6401BBAFF0500B8F505 /* AFNetworking.framework */,
-				C00CA6411BBAFF0500B8F505 /* Alamofire.framework */,
-				C00CA6421BBAFF0500B8F505 /* Aspects.framework */,
-				C00CA6431BBAFF0500B8F505 /* AWSAutoScaling.framework */,
-				C00CA6441BBAFF0500B8F505 /* AWSCloudWatch.framework */,
-				C00CA6451BBAFF0500B8F505 /* AWSCognito.framework */,
-				C00CA6461BBAFF0500B8F505 /* AWSCore.framework */,
-				C00CA6471BBAFF0500B8F505 /* AWSDynamoDB.framework */,
-				C00CA6481BBAFF0500B8F505 /* AWSEC2.framework */,
-				C00CA6491BBAFF0500B8F505 /* AWSElasticLoadBalancing.framework */,
-				C00CA64A1BBAFF0500B8F505 /* AWSKinesis.framework */,
-				C00CA64B1BBAFF0500B8F505 /* AWSS3.framework */,
-				C00CA64C1BBAFF0500B8F505 /* AWSSES.framework */,
-				C00CA64D1BBAFF0500B8F505 /* AWSSimpleDB.framework */,
-				C00CA64E1BBAFF0500B8F505 /* AWSSNS.framework */,
-				C00CA64F1BBAFF0500B8F505 /* AWSSQS.framework */,
-				C00CA6501BBAFF0500B8F505 /* BlocksKit.framework */,
-				C00CA6511BBAFF0500B8F505 /* Bolts.framework */,
-				C00CA6521BBAFF0500B8F505 /* CocoaAsyncSocket.framework */,
-				C00CA6531BBAFF0500B8F505 /* CocoaLumberjack.framework */,
-				C00CA6541BBAFF0500B8F505 /* FLEX.framework */,
-				C00CA6551BBAFF0500B8F505 /* FMDB.framework */,
-				C00CA6561BBAFF0500B8F505 /* FXBlurView.framework */,
-				C00CA6571BBAFF0500B8F505 /* GBDeviceInfo.framework */,
-				C00CA6581BBAFF0500B8F505 /* GZIP.framework */,
-				C00CA6591BBAFF0500B8F505 /* HexColors.framework */,
-				C00CA65A1BBAFF0500B8F505 /* JSQSystemSoundPlayer.framework */,
-				C00CA65B1BBAFF0500B8F505 /* MagicalRecord.framework */,
-				C00CA65C1BBAFF0500B8F505 /* Mantle.framework */,
-				C00CA65D1BBAFF0500B8F505 /* MAObjCRuntime.framework */,
-				C00CA65E1BBAFF0500B8F505 /* Masonry.framework */,
-				C00CA6601BBAFF0500B8F505 /* Mixpanel.framework */,
-				C00CA6611BBAFF0500B8F505 /* Moya.framework */,
-				C00CA6621BBAFF0500B8F505 /* NJKWebViewProgress.framework */,
-				C00CA6631BBAFF0500B8F505 /* NPReachability.framework */,
-				C00CA6641BBAFF0500B8F505 /* ObjectiveSugar.framework */,
-				C00CA6661BBAFF0500B8F505 /* Reachability.framework */,
-				C00CA6671BBAFF0500B8F505 /* SAMCategories.framework */,
-				C00CA6681BBAFF0500B8F505 /* Shimmer.framework */,
-				C00CA66C1BBAFF0500B8F505 /* SMXMLDocument.framework */,
-				C00CA66E1BBAFF0500B8F505 /* SSKeychain.framework */,
-				C00CA66F1BBAFF0500B8F505 /* STPTransitions.framework */,
-				C00CA6701BBAFF0500B8F505 /* TMCache.framework */,
-				C00CA6711BBAFF0500B8F505 /* TOMSMorphingLabel.framework */,
-				C00CA6721BBAFF0500B8F505 /* UICKeyChainStore.framework */,
-				C00CA6731BBAFF0500B8F505 /* UIImage_PDF.framework */,
-				C00CA6741BBAFF0500B8F505 /* XMLDictionary.framework */,
-				C00CA6751BBAFF0500B8F505 /* YapDatabase.framework */,
-				C00CA6761BBAFF0500B8F505 /* zipzap.framework */,
+				C0A7B8521BFA8B1D0084EFFA /* Aspects.framework */,
+				C0A7B8531BFA8B1D0084EFFA /* AWSCognito.framework */,
+				C0A7B8541BFA8B1D0084EFFA /* AWSCore.framework */,
+				C0A7B8551BFA8B1D0084EFFA /* AWSMobileAnalytics.framework */,
+				C0A7B8561BFA8B1D0084EFFA /* BlocksKit.framework */,
+				C0A7B8571BFA8B1D0084EFFA /* Bolts.framework */,
+				C0A7B8581BFA8B1D0084EFFA /* CocoaAsyncSocket.framework */,
+				C0A7B8591BFA8B1D0084EFFA /* CocoaLumberjack.framework */,
+				C0A7B85A1BFA8B1D0084EFFA /* FLEX.framework */,
+				C0A7B85B1BFA8B1D0084EFFA /* FXBlurView.framework */,
+				C0A7B85C1BFA8B1D0084EFFA /* GBDeviceInfo.framework */,
+				C0A7B85D1BFA8B1D0084EFFA /* HexColors.framework */,
+				C0A7B85E1BFA8B1D0084EFFA /* JSQSystemSoundPlayer.framework */,
+				C0A7B85F1BFA8B1D0084EFFA /* MAObjCRuntime.framework */,
+				C0A7B8601BFA8B1D0084EFFA /* Masonry.framework */,
+				C0A7B8611BFA8B1D0084EFFA /* Mixpanel.framework */,
+				C0A7B8631BFA8B1D0084EFFA /* NJKWebViewProgress.framework */,
+				C0A7B8641BFA8B1D0084EFFA /* NPReachability.framework */,
+				C0A7B8651BFA8B1D0084EFFA /* ObjectiveSugar.framework */,
+				C0A7B8661BFA8B1D0084EFFA /* Ono.framework */,
+				C0A7B8671BFA8B1D0084EFFA /* Reachability.framework */,
+				C0A7B8681BFA8B1D0084EFFA /* SAMCategories.framework */,
+				C0A7B8691BFA8B1D0084EFFA /* Shimmer.framework */,
+				C0A7B86A1BFA8B1D0084EFFA /* SMXMLDocument.framework */,
+				C0A7B86B1BFA8B1D0084EFFA /* SSKeychain.framework */,
+				C0A7B86C1BFA8B1D0084EFFA /* STPTransitions.framework */,
+				C0A7B86D1BFA8B1D0084EFFA /* SwiftyJSON.framework */,
+				C0A7B86E1BFA8B1D0084EFFA /* TOMSMorphingLabel.framework */,
+				C0A7B86F1BFA8B1D0084EFFA /* UIImage_PDF.framework */,
+				C0A7B8701BFA8B1D0084EFFA /* YapDatabase.framework */,
+				C0A7B84E1BFA89F90084EFFA /* zipzap.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -373,7 +363,9 @@
 		C00CA5EF1BBAFD1D00B8F505 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Stepan Hruda";
 				TargetAttributes = {
 					C00CA5F61BBAFD1D00B8F505 = {
@@ -494,6 +486,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -561,12 +554,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = ProfilingDyld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stepanhruda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -576,12 +571,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = ProfilingDyld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stepanhruda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -590,16 +587,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ProfilingDyldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stepanhruda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProfilingDyld.app/ProfilingDyld";
 			};
@@ -609,12 +603,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = ProfilingDyldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stepanhruda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProfilingDyld.app/ProfilingDyld";
 			};

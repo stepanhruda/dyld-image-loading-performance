@@ -104,7 +104,7 @@ typedef NS_ENUM(NSInteger, AWSCognitoRecordValueType) {
 /**
  Initializes a AWSCognitoRecord with the given recordID, given data, and a dirtyCount and recordVersion of 0.
  
- @param recordID The record ID of the AWSCognitoRecord
+ @param recordId The record ID of the AWSCognitoRecord
  @param data the initial data that the AWSCognitoRecord will contain
  */
 - (instancetype)initWithId:(NSString *)recordId

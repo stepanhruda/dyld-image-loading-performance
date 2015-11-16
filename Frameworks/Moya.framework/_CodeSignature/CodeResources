@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Moya-Swift.h</key>
 		<data>
-		JsKtiw/cyhHWQIv/DaTPIDboCIs=
+		WD8wJy8UMVJzEhtFzo28USwikYw=
 		</data>
 		<key>Headers/Moya-umbrella.h</key>
 		<data>
@@ -14,23 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ffAttjU7jRD3TYDugjcEWQK8lIA=
-		</data>
-		<key>Modules/Moya.swiftmodule/arm.swiftdoc</key>
-		<data>
-		LND2B0+Phk7ZrrSiEBpPbQurP7o=
-		</data>
-		<key>Modules/Moya.swiftmodule/arm.swiftmodule</key>
-		<data>
-		+brZkANmFtlh8fj4kv410XRTP0c=
+		6J3tXMpJt+sFDObqixbPYrvJQsY=
 		</data>
 		<key>Modules/Moya.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		YL2NpQSVXPHjNeQeofOOs0KQz8A=
+		mKJzDrAiLaluRGPzjwGspikKfwc=
 		</data>
 		<key>Modules/Moya.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		wbYXmil1Fg6VGrt8a8UKfbVfWtQ=
+		jzQJ2+P66wXS9V7EqKxRxwLOWN0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -41,27 +33,19 @@
 	<dict>
 		<key>Headers/Moya-Swift.h</key>
 		<data>
-		JsKtiw/cyhHWQIv/DaTPIDboCIs=
+		WD8wJy8UMVJzEhtFzo28USwikYw=
 		</data>
 		<key>Headers/Moya-umbrella.h</key>
 		<data>
 		KDkBF2D3MhTy900KpfXzUR7Q9Y8=
 		</data>
-		<key>Modules/Moya.swiftmodule/arm.swiftdoc</key>
-		<data>
-		LND2B0+Phk7ZrrSiEBpPbQurP7o=
-		</data>
-		<key>Modules/Moya.swiftmodule/arm.swiftmodule</key>
-		<data>
-		+brZkANmFtlh8fj4kv410XRTP0c=
-		</data>
 		<key>Modules/Moya.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		YL2NpQSVXPHjNeQeofOOs0KQz8A=
+		mKJzDrAiLaluRGPzjwGspikKfwc=
 		</data>
 		<key>Modules/Moya.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		wbYXmil1Fg6VGrt8a8UKfbVfWtQ=
+		jzQJ2+P66wXS9V7EqKxRxwLOWN0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>

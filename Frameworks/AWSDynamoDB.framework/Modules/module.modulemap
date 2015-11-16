@@ -1,6 +1,0 @@
-framework module AWSDynamoDB {
-  umbrella header "AWSDynamoDB-umbrella.h"
-
-  export *
-  module * { export * }
-}

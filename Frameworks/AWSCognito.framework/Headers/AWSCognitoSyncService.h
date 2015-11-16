@@ -1,5 +1,16 @@
-/**
- Copyright 2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+/*
+ Copyright 2010-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+ Licensed under the Apache License, Version 2.0 (the "License").
+ You may not use this file except in compliance with the License.
+ A copy of the License is located at
+
+ http://aws.amazon.com/apache2.0
+
+ or in the "license" file accompanying this file. This file is distributed
+ on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ express or implied. See the License for the specific language governing
+ permissions and limitations under the License.
  */
 
 #import <Foundation/Foundation.h>
@@ -172,206 +183,206 @@
 - (instancetype)initWithConfiguration:(AWSServiceConfiguration *)configuration __attribute__ ((deprecated("Use '+ registerCognitoSyncWithConfiguration:forKey:' and '+ CognitoSyncForKey:' instead.")));
 
 /**
- Initiates a bulk publish of all existing datasets for an Identity Pool to the configured stream. Customers are limited to one successful bulk publish per 24 hours. Bulk publish is an asynchronous request, customers can see the status of the request via the GetBulkPublishDetails operation.
+ <p>Initiates a bulk publish of all existing datasets for an Identity Pool to the configured stream. Customers are limited to one successful bulk publish per 24 hours. Bulk publish is an asynchronous request, customers can see the status of the request via the GetBulkPublishDetails operation.</p><p>This API can only be called with developer credentials. You cannot call this API with the temporary user credentials provided by Cognito Identity.</p>
  
  @param request A container for the necessary parameters to execute the BulkPublish service method.
  
- @return An instance of `BFTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncBulkPublishResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorDuplicateRequest`, `AWSCognitoSyncErrorAlreadyStreamed`.
+ @return An instance of `AWSTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncBulkPublishResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorDuplicateRequest`, `AWSCognitoSyncErrorAlreadyStreamed`.
  
  @see AWSCognitoSyncBulkPublishRequest
  @see AWSCognitoSyncBulkPublishResponse
  */
-- (BFTask *)bulkPublish:(AWSCognitoSyncBulkPublishRequest *)request;
+- (AWSTask *)bulkPublish:(AWSCognitoSyncBulkPublishRequest *)request;
 
 /**
- <p>Deletes the specific dataset. The dataset will be deleted permanently, and the action can't be undone. Datasets that this dataset was merged with will no longer report the merge. Any subsequent operation on this dataset will result in a <code>ResourceNotFoundException</code>.</p><p><code>DeleteDataset</code> can be called with temporary user credentials provided by Cognito Identity or with developer credentials.</p>
+ <p>Deletes the specific dataset. The dataset will be deleted permanently, and the action can't be undone. Datasets that this dataset was merged with will no longer report the merge. Any subsequent operation on this dataset will result in a ResourceNotFoundException.</p><p>This API can be called with temporary user credentials provided by Cognito Identity or with developer credentials.</p>
  
  @param request A container for the necessary parameters to execute the DeleteDataset service method.
  
- @return An instance of `BFTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncDeleteDatasetResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`, `AWSCognitoSyncErrorResourceConflict`.
+ @return An instance of `AWSTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncDeleteDatasetResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`, `AWSCognitoSyncErrorResourceConflict`.
  
  @see AWSCognitoSyncDeleteDatasetRequest
  @see AWSCognitoSyncDeleteDatasetResponse
  */
-- (BFTask *)deleteDataset:(AWSCognitoSyncDeleteDatasetRequest *)request;
+- (AWSTask *)deleteDataset:(AWSCognitoSyncDeleteDatasetRequest *)request;
 
 /**
- <p>Gets meta data about a dataset by identity and dataset name. With Amazon Cognito Sync, each identity has access only to its own data. Thus, the credentials used to make this API call need to have access to the identity data.</p><p><code>DescribeDataset</code> can be called with temporary user credentials provided by Cognito Identity or with developer credentials. You should use Cognito Identity credentials to make this API call.</p>
+ <p>Gets meta data about a dataset by identity and dataset name. With Amazon Cognito Sync, each identity has access only to its own data. Thus, the credentials used to make this API call need to have access to the identity data.</p><p>This API can be called with temporary user credentials provided by Cognito Identity or with developer credentials. You should use Cognito Identity credentials to make this API call.</p>
  
  @param request A container for the necessary parameters to execute the DescribeDataset service method.
  
- @return An instance of `BFTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncDescribeDatasetResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`.
+ @return An instance of `AWSTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncDescribeDatasetResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`.
  
  @see AWSCognitoSyncDescribeDatasetRequest
  @see AWSCognitoSyncDescribeDatasetResponse
  */
-- (BFTask *)describeDataset:(AWSCognitoSyncDescribeDatasetRequest *)request;
+- (AWSTask *)describeDataset:(AWSCognitoSyncDescribeDatasetRequest *)request;
 
 /**
- <p>Gets usage details (for example, data storage) about a particular identity pool.</p><p><code>DescribeIdentityPoolUsage</code> can only be called with developer credentials. You cannot make this API call with the temporary user credentials provided by Cognito Identity.</p>
+ <p>Gets usage details (for example, data storage) about a particular identity pool.</p><p>This API can only be called with developer credentials. You cannot call this API with the temporary user credentials provided by Cognito Identity.</p>
  
  @param request A container for the necessary parameters to execute the DescribeIdentityPoolUsage service method.
  
- @return An instance of `BFTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncDescribeIdentityPoolUsageResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`.
+ @return An instance of `AWSTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncDescribeIdentityPoolUsageResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`.
  
  @see AWSCognitoSyncDescribeIdentityPoolUsageRequest
  @see AWSCognitoSyncDescribeIdentityPoolUsageResponse
  */
-- (BFTask *)describeIdentityPoolUsage:(AWSCognitoSyncDescribeIdentityPoolUsageRequest *)request;
+- (AWSTask *)describeIdentityPoolUsage:(AWSCognitoSyncDescribeIdentityPoolUsageRequest *)request;
 
 /**
- <p>Gets usage information for an identity, including number of datasets and data usage.</p><p><code>DescribeIdentityUsage</code> can be called with temporary user credentials provided by Cognito Identity or with developer credentials.</p>
+ <p>Gets usage information for an identity, including number of datasets and data usage.</p><p>This API can be called with temporary user credentials provided by Cognito Identity or with developer credentials.</p>
  
  @param request A container for the necessary parameters to execute the DescribeIdentityUsage service method.
  
- @return An instance of `BFTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncDescribeIdentityUsageResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`.
+ @return An instance of `AWSTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncDescribeIdentityUsageResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`.
  
  @see AWSCognitoSyncDescribeIdentityUsageRequest
  @see AWSCognitoSyncDescribeIdentityUsageResponse
  */
-- (BFTask *)describeIdentityUsage:(AWSCognitoSyncDescribeIdentityUsageRequest *)request;
+- (AWSTask *)describeIdentityUsage:(AWSCognitoSyncDescribeIdentityUsageRequest *)request;
 
 /**
- Get the status of the last BulkPublish operation for an identity pool.
+ <p>Get the status of the last BulkPublish operation for an identity pool.</p><p>This API can only be called with developer credentials. You cannot call this API with the temporary user credentials provided by Cognito Identity.</p>
  
  @param request A container for the necessary parameters to execute the GetBulkPublishDetails service method.
  
- @return An instance of `BFTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncGetBulkPublishDetailsResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`.
+ @return An instance of `AWSTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncGetBulkPublishDetailsResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`.
  
  @see AWSCognitoSyncGetBulkPublishDetailsRequest
  @see AWSCognitoSyncGetBulkPublishDetailsResponse
  */
-- (BFTask *)getBulkPublishDetails:(AWSCognitoSyncGetBulkPublishDetailsRequest *)request;
+- (AWSTask *)getBulkPublishDetails:(AWSCognitoSyncGetBulkPublishDetailsRequest *)request;
 
 /**
- GetCognitoEvents
+ <p>Gets the events and the corresponding Lambda functions associated with an identity pool.</p><p>This API can only be called with developer credentials. You cannot call this API with the temporary user credentials provided by Cognito Identity.</p>
  
  @param request A container for the necessary parameters to execute the GetCognitoEvents service method.
  
- @return An instance of `BFTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncGetCognitoEventsResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`.
+ @return An instance of `AWSTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncGetCognitoEventsResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`.
  
  @see AWSCognitoSyncGetCognitoEventsRequest
  @see AWSCognitoSyncGetCognitoEventsResponse
  */
-- (BFTask *)getCognitoEvents:(AWSCognitoSyncGetCognitoEventsRequest *)request;
+- (AWSTask *)getCognitoEvents:(AWSCognitoSyncGetCognitoEventsRequest *)request;
 
 /**
- <p>Gets the configuration settings of an identity pool.</p>
+ <p>Gets the configuration settings of an identity pool.</p><p>This API can only be called with developer credentials. You cannot call this API with the temporary user credentials provided by Cognito Identity.</p>
  
  @param request A container for the necessary parameters to execute the GetIdentityPoolConfiguration service method.
  
- @return An instance of `BFTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncGetIdentityPoolConfigurationResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`.
+ @return An instance of `AWSTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncGetIdentityPoolConfigurationResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`.
  
  @see AWSCognitoSyncGetIdentityPoolConfigurationRequest
  @see AWSCognitoSyncGetIdentityPoolConfigurationResponse
  */
-- (BFTask *)getIdentityPoolConfiguration:(AWSCognitoSyncGetIdentityPoolConfigurationRequest *)request;
+- (AWSTask *)getIdentityPoolConfiguration:(AWSCognitoSyncGetIdentityPoolConfigurationRequest *)request;
 
 /**
- <p>Lists datasets for an identity. With Amazon Cognito Sync, each identity has access only to its own data. Thus, the credentials used to make this API call need to have access to the identity data.</p><p><code>ListDatasets</code> can be called with temporary user credentials provided by Cognito Identity or with developer credentials. You should use the Cognito Identity credentials to make this API call.</p>
+ <p>Lists datasets for an identity. With Amazon Cognito Sync, each identity has access only to its own data. Thus, the credentials used to make this API call need to have access to the identity data.</p><p>ListDatasets can be called with temporary user credentials provided by Cognito Identity or with developer credentials. You should use the Cognito Identity credentials to make this API call.</p>
  
  @param request A container for the necessary parameters to execute the ListDatasets service method.
  
- @return An instance of `BFTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncListDatasetsResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`.
+ @return An instance of `AWSTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncListDatasetsResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`.
  
  @see AWSCognitoSyncListDatasetsRequest
  @see AWSCognitoSyncListDatasetsResponse
  */
-- (BFTask *)listDatasets:(AWSCognitoSyncListDatasetsRequest *)request;
+- (AWSTask *)listDatasets:(AWSCognitoSyncListDatasetsRequest *)request;
 
 /**
- <p>Gets a list of identity pools registered with Cognito.</p><p><code>ListIdentityPoolUsage</code> can only be called with developer credentials. You cannot make this API call with the temporary user credentials provided by Cognito Identity.</p>
+ <p>Gets a list of identity pools registered with Cognito.</p><p>ListIdentityPoolUsage can only be called with developer credentials. You cannot make this API call with the temporary user credentials provided by Cognito Identity.</p>
  
  @param request A container for the necessary parameters to execute the ListIdentityPoolUsage service method.
  
- @return An instance of `BFTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncListIdentityPoolUsageResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`.
+ @return An instance of `AWSTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncListIdentityPoolUsageResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`.
  
  @see AWSCognitoSyncListIdentityPoolUsageRequest
  @see AWSCognitoSyncListIdentityPoolUsageResponse
  */
-- (BFTask *)listIdentityPoolUsage:(AWSCognitoSyncListIdentityPoolUsageRequest *)request;
+- (AWSTask *)listIdentityPoolUsage:(AWSCognitoSyncListIdentityPoolUsageRequest *)request;
 
 /**
- <p>Gets paginated records, optionally changed after a particular sync count for a dataset and identity. With Amazon Cognito Sync, each identity has access only to its own data. Thus, the credentials used to make this API call need to have access to the identity data.</p><p><code>ListRecords</code> can be called with temporary user credentials provided by Cognito Identity or with developer credentials. You should use Cognito Identity credentials to make this API call.</p>
+ <p>Gets paginated records, optionally changed after a particular sync count for a dataset and identity. With Amazon Cognito Sync, each identity has access only to its own data. Thus, the credentials used to make this API call need to have access to the identity data.</p><p>ListRecords can be called with temporary user credentials provided by Cognito Identity or with developer credentials. You should use Cognito Identity credentials to make this API call.</p>
  
  @param request A container for the necessary parameters to execute the ListRecords service method.
  
- @return An instance of `BFTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncListRecordsResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorTooManyRequests`, `AWSCognitoSyncErrorInternalError`.
+ @return An instance of `AWSTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncListRecordsResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorTooManyRequests`, `AWSCognitoSyncErrorInternalError`.
  
  @see AWSCognitoSyncListRecordsRequest
  @see AWSCognitoSyncListRecordsResponse
  */
-- (BFTask *)listRecords:(AWSCognitoSyncListRecordsRequest *)request;
+- (AWSTask *)listRecords:(AWSCognitoSyncListRecordsRequest *)request;
 
 /**
- <p>Registers a device to receive push sync notifications.</p>
+ <p>Registers a device to receive push sync notifications.</p><p>This API can only be called with temporary credentials provided by Cognito Identity. You cannot call this API with developer credentials.</p>
  
  @param request A container for the necessary parameters to execute the RegisterDevice service method.
  
- @return An instance of `BFTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncRegisterDeviceResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorInvalidConfiguration`, `AWSCognitoSyncErrorTooManyRequests`.
+ @return An instance of `AWSTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncRegisterDeviceResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorInvalidConfiguration`, `AWSCognitoSyncErrorTooManyRequests`.
  
  @see AWSCognitoSyncRegisterDeviceRequest
  @see AWSCognitoSyncRegisterDeviceResponse
  */
-- (BFTask *)registerDevice:(AWSCognitoSyncRegisterDeviceRequest *)request;
+- (AWSTask *)registerDevice:(AWSCognitoSyncRegisterDeviceRequest *)request;
 
 /**
- SetCognitoEvents
+ <p>Sets the AWS Lambda function for a given event type for an identity pool. This request only updates the key/value pair specified. Other key/values pairs are not updated. To remove a key value pair, pass a empty value for the particular key.</p><p>This API can only be called with developer credentials. You cannot call this API with the temporary user credentials provided by Cognito Identity.</p>
  
  @param request A container for the necessary parameters to execute the SetCognitoEvents service method.
  
- @return An instance of `BFTask`. On successful execution, `task.result` will be `nil`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`.
+ @return An instance of `AWSTask`. On successful execution, `task.result` will be `nil`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`.
  
  @see AWSCognitoSyncSetCognitoEventsRequest
  */
-- (BFTask *)setCognitoEvents:(AWSCognitoSyncSetCognitoEventsRequest *)request;
+- (AWSTask *)setCognitoEvents:(AWSCognitoSyncSetCognitoEventsRequest *)request;
 
 /**
- <p>Sets the necessary configuration for push sync.</p>
+ <p>Sets the necessary configuration for push sync.</p><p>This API can only be called with developer credentials. You cannot call this API with the temporary user credentials provided by Cognito Identity.</p>
  
  @param request A container for the necessary parameters to execute the SetIdentityPoolConfiguration service method.
  
- @return An instance of `BFTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncSetIdentityPoolConfigurationResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`.
+ @return An instance of `AWSTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncSetIdentityPoolConfigurationResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorTooManyRequests`, `AWSCognitoSyncErrorLimitExceeded`.
  
  @see AWSCognitoSyncSetIdentityPoolConfigurationRequest
  @see AWSCognitoSyncSetIdentityPoolConfigurationResponse
  */
-- (BFTask *)setIdentityPoolConfiguration:(AWSCognitoSyncSetIdentityPoolConfigurationRequest *)request;
+- (AWSTask *)setIdentityPoolConfiguration:(AWSCognitoSyncSetIdentityPoolConfigurationRequest *)request;
 
 /**
- <p>Subscribes to receive notifications when a dataset is modified by another device.</p>
+ <p>Subscribes to receive notifications when a dataset is modified by another device.</p><p>This API can only be called with temporary credentials provided by Cognito Identity. You cannot call this API with developer credentials.</p>
  
  @param request A container for the necessary parameters to execute the SubscribeToDataset service method.
  
- @return An instance of `BFTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncSubscribeToDatasetResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorInvalidConfiguration`, `AWSCognitoSyncErrorTooManyRequests`.
+ @return An instance of `AWSTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncSubscribeToDatasetResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorInvalidConfiguration`, `AWSCognitoSyncErrorTooManyRequests`.
  
  @see AWSCognitoSyncSubscribeToDatasetRequest
  @see AWSCognitoSyncSubscribeToDatasetResponse
  */
-- (BFTask *)subscribeToDataset:(AWSCognitoSyncSubscribeToDatasetRequest *)request;
+- (AWSTask *)subscribeToDataset:(AWSCognitoSyncSubscribeToDatasetRequest *)request;
 
 /**
- <p>Unsubscribes from receiving notifications when a dataset is modified by another device.</p>
+ <p>Unsubscribes from receiving notifications when a dataset is modified by another device.</p><p>This API can only be called with temporary credentials provided by Cognito Identity. You cannot call this API with developer credentials.</p>
  
  @param request A container for the necessary parameters to execute the UnsubscribeFromDataset service method.
  
- @return An instance of `BFTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncUnsubscribeFromDatasetResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorInvalidConfiguration`, `AWSCognitoSyncErrorTooManyRequests`.
+ @return An instance of `AWSTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncUnsubscribeFromDatasetResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorInternalError`, `AWSCognitoSyncErrorInvalidConfiguration`, `AWSCognitoSyncErrorTooManyRequests`.
  
  @see AWSCognitoSyncUnsubscribeFromDatasetRequest
  @see AWSCognitoSyncUnsubscribeFromDatasetResponse
  */
-- (BFTask *)unsubscribeFromDataset:(AWSCognitoSyncUnsubscribeFromDatasetRequest *)request;
+- (AWSTask *)unsubscribeFromDataset:(AWSCognitoSyncUnsubscribeFromDatasetRequest *)request;
 
 /**
- <p>Posts updates to records and adds and deletes records for a dataset and user.</p><p><code>UpdateRecords</code> can only be called with temporary user credentials provided by Cognito Identity. You cannot make this API call with developer credentials.</p>
+ <p>Posts updates to records and adds and deletes records for a dataset and user.</p><p>The sync count in the record patch is your last known sync count for that record. The server will reject an UpdateRecords request with a ResourceConflictException if you try to patch a record with a new value but a stale sync count.</p><p>For example, if the sync count on the server is 5 for a key called highScore and you try and submit a new highScore with sync count of 4, the request will be rejected. To obtain the current sync count for a record, call ListRecords. On a successful update of the record, the response returns the new sync count for that record. You should present that sync count the next time you try to update that same record. When the record does not exist, specify the sync count as 0.</p><p>This API can be called with temporary user credentials provided by Cognito Identity or with developer credentials.</p>
  
  @param request A container for the necessary parameters to execute the UpdateRecords service method.
  
- @return An instance of `BFTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncUpdateRecordsResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorLimitExceeded`, `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorResourceConflict`, `AWSCognitoSyncErrorInvalidLambdaFunctionOutput`, `AWSCognitoSyncErrorLambdaThrottled`, `AWSCognitoSyncErrorTooManyRequests`, `AWSCognitoSyncErrorInternalError`.
+ @return An instance of `AWSTask`. On successful execution, `task.result` will contain an instance of `AWSCognitoSyncUpdateRecordsResponse`. On failed execution, `task.error` may contain an `NSError` with `AWSCognitoSyncErrorDomain` domian and the following error code: `AWSCognitoSyncErrorInvalidParameter`, `AWSCognitoSyncErrorLimitExceeded`, `AWSCognitoSyncErrorNotAuthorized`, `AWSCognitoSyncErrorResourceNotFound`, `AWSCognitoSyncErrorResourceConflict`, `AWSCognitoSyncErrorInvalidLambdaFunctionOutput`, `AWSCognitoSyncErrorLambdaThrottled`, `AWSCognitoSyncErrorTooManyRequests`, `AWSCognitoSyncErrorInternalError`.
  
  @see AWSCognitoSyncUpdateRecordsRequest
  @see AWSCognitoSyncUpdateRecordsResponse
  */
-- (BFTask *)updateRecords:(AWSCognitoSyncUpdateRecordsRequest *)request;
+- (AWSTask *)updateRecords:(AWSCognitoSyncUpdateRecordsRequest *)request;
 
 @end

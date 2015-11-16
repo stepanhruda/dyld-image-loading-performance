@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AWSCognito-umbrella.h</key>
 		<data>
-		cWpB/NbM8/CDAu6+hJa8/ngnKEc=
+		er+ru86JOcWoiMpXmxfHhD9hpOA=
 		</data>
 		<key>Headers/AWSCognito.h</key>
 		<data>
@@ -18,46 +18,46 @@
 		</data>
 		<key>Headers/AWSCognitoDataset.h</key>
 		<data>
-		wBxzZ0xr3Eo781JFOXcyjeTlQXA=
+		eKou0t5OrcSFTIUGXpeidJElc1k=
 		</data>
 		<key>Headers/AWSCognitoHandlers.h</key>
 		<data>
-		V9kuI+0SUN+3Y5/PUtVkIoZS7pU=
+		LM70YCpkz7cI8+KxdeXE/WO8fyk=
 		</data>
 		<key>Headers/AWSCognitoRecord.h</key>
 		<data>
-		66RwRXXK2BbEfLxUP/vWADXJXhk=
+		9UUElly1h1SOrYPt8Y1vyYTeNpA=
 		</data>
 		<key>Headers/AWSCognitoService.h</key>
 		<data>
-		MrL3pG/kiH1qZTyNtaP47117lFM=
+		5MkMefEHMP0ulk4JuMkVTjxw5X4=
 		</data>
 		<key>Headers/AWSCognitoSyncModel.h</key>
 		<data>
-		OUdqRwQAYsKIqAF8Om3yuWWFmGI=
+		6TrPx9lgg2S5Waej8/YSWjh+XwA=
+		</data>
+		<key>Headers/AWSCognitoSyncResources.h</key>
+		<data>
+		hVc6oRz5nt42NsvmAlV6j9Nwqoo=
 		</data>
 		<key>Headers/AWSCognitoSyncService.h</key>
 		<data>
-		hF/gtnG/NkF5U43ZtdjdykRpzhk=
+		Ir+lJaOPPBMf7XkGE8/rZtbD6Mw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+uLghT0SZkal1gcT0YzSIurJV0k=
+		fN+NdLxC9WfX1u9HO56kYbom7MY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		YyrUAybxbM3dnuyV+DJ+njM7FyQ=
-		</data>
-		<key>cognito-sync-2014-06-30.json</key>
-		<data>
-		K+FzzunBmcB5M8Wiq68xblqr6wA=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/AWSCognito-umbrella.h</key>
 		<data>
-		cWpB/NbM8/CDAu6+hJa8/ngnKEc=
+		er+ru86JOcWoiMpXmxfHhD9hpOA=
 		</data>
 		<key>Headers/AWSCognito.h</key>
 		<data>
@@ -69,35 +69,35 @@
 		</data>
 		<key>Headers/AWSCognitoDataset.h</key>
 		<data>
-		wBxzZ0xr3Eo781JFOXcyjeTlQXA=
+		eKou0t5OrcSFTIUGXpeidJElc1k=
 		</data>
 		<key>Headers/AWSCognitoHandlers.h</key>
 		<data>
-		V9kuI+0SUN+3Y5/PUtVkIoZS7pU=
+		LM70YCpkz7cI8+KxdeXE/WO8fyk=
 		</data>
 		<key>Headers/AWSCognitoRecord.h</key>
 		<data>
-		66RwRXXK2BbEfLxUP/vWADXJXhk=
+		9UUElly1h1SOrYPt8Y1vyYTeNpA=
 		</data>
 		<key>Headers/AWSCognitoService.h</key>
 		<data>
-		MrL3pG/kiH1qZTyNtaP47117lFM=
+		5MkMefEHMP0ulk4JuMkVTjxw5X4=
 		</data>
 		<key>Headers/AWSCognitoSyncModel.h</key>
 		<data>
-		OUdqRwQAYsKIqAF8Om3yuWWFmGI=
+		6TrPx9lgg2S5Waej8/YSWjh+XwA=
+		</data>
+		<key>Headers/AWSCognitoSyncResources.h</key>
+		<data>
+		hVc6oRz5nt42NsvmAlV6j9Nwqoo=
 		</data>
 		<key>Headers/AWSCognitoSyncService.h</key>
 		<data>
-		hF/gtnG/NkF5U43ZtdjdykRpzhk=
+		Ir+lJaOPPBMf7XkGE8/rZtbD6Mw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		YyrUAybxbM3dnuyV+DJ+njM7FyQ=
-		</data>
-		<key>cognito-sync-2014-06-30.json</key>
-		<data>
-		K+FzzunBmcB5M8Wiq68xblqr6wA=
 		</data>
 	</dict>
 	<key>rules</key>
