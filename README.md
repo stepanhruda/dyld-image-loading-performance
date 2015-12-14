@@ -14,7 +14,7 @@ The linking time was bad on iOS 8, and the performance is notably worse on iOS 9
 
 Typically you add frameworks to your app through _Link Binary With Libraries_ step in Xcode, which results in a `-framework` flag passed to _ld_ during build, and consequently in a `LC_LOAD_DYLIB` command in the final executable. However, _dyld_ commands get executed before _lldb_ or _dtrace_ get attached, so it's hard to track down what's happening.
 
-This example app doesn't link against the frameworks, but instead invokes `dlopen` manually during runtime, still consistently reproducing the issue. It uses a set of frameworks as built by `use_frameworks!` through Cocoapods. Presumably Carthage and manual dependencies through e.g. git submodules run into the same issue.
+This example app doesn't link against the frameworks, but instead invokes `dlopen` manually during runtime, still consistently reproducing the issue. It uses a set of frameworks as built by `use_frameworks!` through CocoaPods. Presumably Carthage and manual dependencies through e.g. git submodules run into the same issue.
 
 <img width="794" alt="screen shot 2015-09-30 at 10 50 54 am" src="https://cloud.githubusercontent.com/assets/2835783/10197718/f282b962-6766-11e5-8661-0722546555c3.png">
 
@@ -50,7 +50,7 @@ int result = fcntl(fd, F_ADDFILESIGS, &siginfo);
 
 It is possible to move all symbols (even when using Swift) into your app executable as suggested by [Accelerator](https://github.com/johnno1962/Accelerator). In this way, _dyld_ doesn't need to load the frameworks on launch. This only works if you are compiling the framework from source.
 
-1. __Get rid of linker `-framework` flags and promise to provide `-filelist` instead.__ If you're using Cocoapods, it can be automated through a `post_install` step in Podfile.
+1. __Get rid of linker `-framework` flags and promise to provide `-filelist` instead.__ If you're using CocoaPods, it can be automated through a `post_install` step in Podfile.
 
   ```
 post_install do |installer|
@@ -75,7 +75,7 @@ end
   ```
     Notice that we don't remove frameworks `if config_name == 'Test'`. _xctest_ bundles seem to have issues running properly. Let me know if you succeed in running tests with this setup!
 
-1. __Create a filelist per architecture, containing object files to be linked into the final executable.__ Again, if you're using Cocoapods, automate it by the following script. Run it after _Manifest.lock_ is verified in your main target (it needs to happen after all dependencies are compiled, but before the main executable is linked).
+1. __Create a filelist per architecture, containing object files to be linked into the final executable.__ Again, if you're using CocoaPods, automate it by the following script. Run it after _Manifest.lock_ is verified in your main target (it needs to happen after all dependencies are compiled, but before the main executable is linked).
 
   ```
 #!/usr/bin/ruby
@@ -108,7 +108,7 @@ end
 
 1. __Resource bundles don't exist, include all resources into your main bundle.__ Also edit your code in case it expects resource bundles to exist.
 
-1. If using Cocoapods, completely skip the _Embed Pod Frameworks_ step for configurations that use this workaround (e.g. not for tests).
+1. If using CocoaPods, completely skip the _Embed Pod Frameworks_ step for configurations that use this workaround (e.g. not for tests).
 
    ```
    if [[ "$CONFIGURATION" == "Test" ]]; then
