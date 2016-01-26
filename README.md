@@ -1,3 +1,29 @@
+__Put your party hat on! The image loading time is ~75% faster on iOS 9.3 beta 2.__
+
+Here is an example app launch comparison, profiled on an iPad Air 2:
+
+```swift
+// iOS 9.2
+total time: 4.7 seconds (100.0%)
+...
+total images loading time: 3.9 seconds (82.5%)
+
+// iOS 9.3 beta 2
+total time: 1.7 seconds (100.0%)
+...
+total images loading time: 1.2 seconds (73.2%)
+```
+
+__Important note__: The performance improvement is in system libraries your binary dynamically links against. Users on iOS <9.3 won't see any difference even if your app is compiled with the Xcode 7.3 toolchain.
+
+I still recommend using one of the workarounds described below, until your project's deployment target can be iOS 9.3 or higher.
+
+The cost has been significantly reduced, but it's not free, so make sure you profile your launch time if you have a non-trivial app!
+
+---
+
+### Original issue
+
 __tl;dr:__ _dyld takes too long to load frameworks, which makes apps slow to open_
 
 [rdar://22920190](http://www.openradar.me/radar?id=6332266275930112)
