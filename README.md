@@ -63,7 +63,7 @@ When using Instruments, only a fraction of the time taken is reported in time pr
 
 However, _dyld_ can profile the initialization time when passed `DYLD_PRINT_APIS` and `DYLD_PRINT_STATISTICS` environment variables. Combining this with "poor man's profiling" (pausing the process multiple times and seeing what the stack trace looks like), what seems to take the vast majority of time is phase 6 of loading a Mach-O image, more specifically the `ImageLoaderMachO::loadCodeSignature` function, even more specifically loading the signature from disk using `fcntl` ([full source](http://www.opensource.apple.com/source/dyld/dyld-353.2.3/src/ImageLoaderMachO.cpp)):
 
-```
+```cpp
 siginfo.fs_file_start=offsetInFatFile;				// start of mach-o slice in fat file 
 siginfo.fs_blob_start=(void*)(long)(codeSigCmd->dataoff);	// start of CD in mach-o file
 siginfo.fs_blob_size=codeSigCmd->datasize;			// size of CD
@@ -78,7 +78,7 @@ It is possible to move all symbols (even when using Swift) into your app executa
 
 1. __Get rid of linker `-framework` flags and promise to provide `-filelist` instead.__ If you're using CocoaPods, it can be automated through a `post_install` step in Podfile.
 
-  ```
+  ```ruby
 post_install do |installer|
   pods_target = installer.aggregate_targets.detect do |target|
   # Target label is either `Pods` or `Pods-#{name_of_your_main_target}` based on how complex your dependency graph is.
@@ -99,11 +99,12 @@ post_install do |installer|
 
 end
   ```
-    Notice that we don't remove frameworks `if config_name == 'Test'`. _xctest_ bundles seem to have issues running properly. Let me know if you succeed in running tests with this setup!
+  
+Notice that we don't remove frameworks `if config_name == 'Test'`. _xctest_ bundles seem to have issues running properly. Let me know if you succeed in running tests with this setup!
 
-1. __Create a filelist per architecture, containing object files to be linked into the final executable.__ Again, if you're using CocoaPods, automate it by the following script. Run it after _Manifest.lock_ is verified in your main target (it needs to happen after all dependencies are compiled, but before the main executable is linked).
+2. __Create a filelist per architecture, containing object files to be linked into the final executable.__ Again, if you're using CocoaPods, automate it by the following script. Run it after _Manifest.lock_ is verified in your main target (it needs to happen after all dependencies are compiled, but before the main executable is linked).
 
-  ```
+  ```ruby
 #!/usr/bin/ruby
 
 intermediates_directory = ENV['OBJROOT']
@@ -130,11 +131,11 @@ archs.split(" ").each do |architecture|
 end
   ```
 
-1. __Link your app executable against any static libraries needed.__ You might or might not get linker errors if you don't, so make sure you test the hell out of your app.
+3. __Link your app executable against any static libraries needed.__ You might or might not get linker errors if you don't, so make sure you test the hell out of your app.
 
-1. __Resource bundles don't exist, include all resources into your main bundle.__ Also edit your code in case it expects resource bundles to exist.
+4. __Resource bundles don't exist, include all resources into your main bundle.__ Also edit your code in case it expects resource bundles to exist.
 
-1. If using CocoaPods, completely skip the _Embed Pod Frameworks_ step for configurations that use this workaround (e.g. not for tests).
+5. If using CocoaPods, completely skip the _Embed Pod Frameworks_ step for configurations that use this workaround (e.g. not for tests).
 
    ```
    if [[ "$CONFIGURATION" == "Test" ]]; then
